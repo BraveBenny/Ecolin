@@ -1,103 +1,193 @@
-"use client";
-
 import Image from 'next/image';
-import ProductSpotlight from "@/components/ProductSpotlight";
+import Link from 'next/link';
+import NewsletterSignup from '@/components/forms/NewsletterSignup';
 
 export default function Home() {
-  return (
-    <main className="relative flex flex-col min-h-screen bg-white text-gray-900 font-sans selection:bg-[#A98E5D] selection:text-white">
+    return (
+        <main className="flex flex-col min-h-screen bg-white text-gray-900 font-sans overflow-x-hidden selection:bg-[#A98E5D] selection:text-white">
 
-      {/* The White Snow Noise Overlay (Global) */}
-      <div
-        className="fixed inset-0 pointer-events-none z-50 opacity-[0.04] mix-blend-multiply"
-        style={{
-          backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E")'
-        }}>
-      </div>
+            {/* The White Snow Noise Overlay (Global) for texture */}
+            <div
+                className="fixed inset-0 pointer-events-none z-50 opacity-[0.04] mix-blend-multiply"
+                style={{
+                backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E")'
+                }}>
+            </div>
 
-      {/* Section 1: Desktop Hero (Split-Panel Integration) */}
-      <section className="relative w-full min-h-[90vh] flex flex-col md:flex-row bg-white overflow-hidden">
+            {/* Section 1: The Modern Hero (Tactile & Fluid) */}
+            <section className="relative flex flex-col md:flex-row w-full min-h-[90vh] bg-gradient-to-br from-[#EAE4D9] via-[#DBCBB5] to-[#C4B097] px-6 sm:px-12 lg:px-24 overflow-hidden">
 
-        {/* Col 1: Text, CTA, Reduced Logo (Left Panel) */}
-        <div className="w-full lg:w-1/4 md:w-1/3 bg-white/95 backdrop-blur-sm px-8 md:px-12 lg:px-16 py-16 flex flex-col justify-center z-10 shadow-[20px_0_50px_rgba(0,0,0,0.02)]">
+                {/* Left Column (Text) */}
+                <div className="w-full md:w-2/5 flex flex-col justify-center py-20 md:py-0 z-10 animate-[fadeIn_1s_ease-out_forwards]">
+                    <div className="max-w-xl">
+                        <span className="text-[#8C734B] uppercase tracking-[0.3em] text-[10px] font-bold mb-8 block">
+                            Premium Protection
+                        </span>
+                        <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif text-gray-900 leading-[1.1] mb-10">
+                            Breathable luxury<br />for your <span className="italic font-light text-gray-800">wardrobe.</span>
+                        </h1>
+                        <p className="text-gray-800/80 text-lg md:text-xl font-light mb-12 leading-relaxed max-w-lg">
+                            The modern standard in garment care. Protective muslin storage designed to extend the life of your curated collection.
+                        </p>
+                        <Link href="/products" className="inline-block bg-gray-900 text-white px-10 py-5 uppercase tracking-widest text-xs font-bold transition-all duration-700 ease-out hover:bg-white hover:text-gray-900 border border-transparent hover:border-gray-900 hover:-translate-y-1 shadow-xl shadow-gray-900/10">
+                            Discover the Collection
+                        </Link>
+                    </div>
+                </div>
 
-          {/* Tasteful, Reduced Logo */}
-          <div className="relative w-28 h-28 mb-10 shrink-0 hidden md:block animate-[fadeInUp_1s_ease-out_forwards]">
-            <Image
-              src="/images/logo-minimal.png"
-              alt="ecolin logo"
-              fill
-              className="object-contain object-left-top"
-              priority
-            />
-          </div>
-          {/* Mobile Logo Fallback (Centered) */}
-          <div className="relative w-32 h-32 mb-10 shrink-0 md:hidden animate-[fadeInUp_1s_ease-out_forwards] mx-auto">
-            <Image
-              src="/images/logo-minimal.png"
-              alt="ecolin logo"
-              fill
-              className="object-contain"
-              priority
-            />
-          </div>
+                {/* Right Column (Image) */}
+                <div className="w-full md:w-3/5 relative flex items-center justify-center py-12 md:py-24 z-10">
+                    <div className="relative w-full aspect-[4/5] max-w-2xl mx-auto overflow-hidden shadow-2xl shadow-[#8C734B]/20 border border-white/20 group">
+                        {/* Fallback layout visual */}
+                        <div className="absolute inset-0 flex items-center justify-center text-[#8C734B] font-light text-xs uppercase tracking-widest bg-[#EAE4D9]/50 z-0">
+                            Image: lifestyle-closet-minimal.png
+                        </div>
+                        {/* We shouldn't use style opacity hacks alongside Tailwind if doing static optimization */}
+                        <Image
+                            src="/images/lifestyle-closet-minimal.png"
+                            alt="Ecolin Lifestyle Closet"
+                            fill
+                            className="object-cover object-center z-10 transition-transform duration-[1.5s] ease-out group-hover:scale-105"
+                            priority
+                        />
+                    </div>
+                </div>
+            </section>
 
-          {/* Typography */}
-          <h1 className="text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-serif text-gray-900 leading-[1.1] mb-6 tracking-tight animate-[fadeInUp_1.2s_ease-out_forwards] text-center md:text-left">
-            Preserve <span className="italic text-[#A98E5D]">Elegance.</span>
-          </h1>
+            {/* Section 2: The Philosophy (Logo Use #1 - Watermark) */}
+            <section className="relative py-32 md:py-48 px-6 w-full text-center flex items-center justify-center bg-white overflow-hidden">
+                {/* Massive Logo Watermark */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] md:w-[800px] md:h-[800px] opacity-5 pointer-events-none">
+                    <Image
+                        src="/images/logo-minimal.png"
+                        alt="Background Watermark"
+                        fill
+                        className="object-contain"
+                    />
+                </div>
 
-          <p className="text-gray-500 text-lg md:text-xl font-light mb-12 max-w-sm leading-relaxed animate-[fadeInUp_1.4s_ease-out_forwards] text-center md:text-left mx-auto md:mx-0">
-            The definitive standard in breathable muslin garment care.
-          </p>
+                <div className="relative z-10 max-w-4xl mx-auto space-y-12 px-4">
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-gray-900 tracking-tight leading-tight">
+                        The Shift from Plastic<br />to <span className="italic text-[#8C734B]">Preservation.</span>
+                    </h2>
+                    <div className="w-12 h-px bg-[#A98E5D] mx-auto"></div>
+                    <p className="text-xl md:text-2xl font-light text-gray-700 leading-relaxed max-w-2xl mx-auto">
+                        Everything needs protection, why not your precious clothes. High-end garments require the ability to breathe in order to maintain their structural and textile integrity. Plastic traps off-gassing chemicals and moisture, silently deteriorating fabrics over time.
+                    </p>
+                </div>
+            </section>
 
-          {/* Call-to-Action */}
-          <div className="animate-[fadeInUp_1.6s_ease-out_forwards] flex justify-center md:justify-start">
-            <button className="bg-gray-900 text-white hover:bg-[#A98E5D] transition-colors duration-500 rounded-none px-12 py-5 uppercase tracking-widest text-sm font-bold shadow-xl shadow-gray-900/10">
-              Shop the Collection
-            </button>
-          </div>
+            {/* Section 3: Product Spotlight (Interactive & Sleek) */}
+            <section className="py-24 px-6 md:px-12 w-full bg-[#F9F8F6]">
+                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-24 items-center">
 
-        </div>
+                    {/* Left: Image */}
+                    <div className="relative w-full h-[600px] md:h-[800px] flex items-center justify-center p-8 lg:p-12 group perspective-1000">
+                        {/* Decorative refined frame */}
+                        <div className="absolute inset-4 md:inset-8 border border-[#A98E5D]/20 bg-white/40 backdrop-blur-sm z-0 transition-transform duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-[1.02] group-hover:shadow-2xl group-hover:shadow-[rgba(169,142,93,0.15)] rounded-sm"></div>
+                        <div className="absolute inset-0 flex items-center justify-center text-gray-300 font-light text-xs uppercase tracking-widest z-0 pointer-events-none">
+                            Image: product-suit-cover.png
+                        </div>
+                        <Image
+                            src="/images/product-suit-cover.png"
+                            alt="Signature Suit Cover"
+                            fill
+                            className="object-contain z-10 p-12 md:p-20 transition-all duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:-translate-y-4 group-hover:scale-105"
+                        />
+                    </div>
 
-        {/* Col 2: Full Wardrobe Panel (Right Visual) */}
-        <div className="w-full lg:w-3/4 md:w-2/3 relative min-h-[60vh] md:min-h-[90vh] bg-gray-50 flex items-center justify-center border-l-4 border-l-[#A98E5D] shadow-[-10px_0_30px_rgba(0,0,0,0.03)] z-0 overflow-hidden">
+                    {/* Right: Text */}
+                    <div className="flex flex-col space-y-8 z-10">
+                        <h3 className="text-[#A98E5D] uppercase tracking-[0.3em] text-[10px] font-bold">
+                            THE SIGNATURE SUIT COVER
+                        </h3>
+                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-gray-900 leading-[1.2] font-serif">
+                            Uncompromising Protection for <span className="italic text-[#8C734B]">Timeless</span> Elegance.
+                        </h2>
+                        <p className="text-gray-600 leading-relaxed font-light text-lg lg:text-xl pb-6">
+                            Engineered for longevity. Our signature suit cover features a sheer organza window for effortless wardrobe navigation, and an exclusive padded channel designed specifically for cedar or lavender essential oils.
+                        </p>
+                        <ul className="space-y-6 font-light text-gray-700 text-lg mb-8">
+                            <li className="flex items-center">
+                                <span className="w-1.5 h-1.5 bg-[#A98E5D] rounded-full mr-4 shadow-sm shadow-[#A98E5D]/50 shrink-0"></span>
+                                100% Breathable Cotton Muslin
+                            </li>
+                            <li className="flex items-center">
+                                <span className="w-1.5 h-1.5 bg-[#A98E5D] rounded-full mr-4 shadow-sm shadow-[#A98E5D]/50 shrink-0"></span>
+                                Acid-free preservation environment
+                            </li>
+                            <li className="flex items-center">
+                                <span className="w-1.5 h-1.5 bg-[#A98E5D] rounded-full mr-4 shadow-sm shadow-[#A98E5D]/50 shrink-0"></span>
+                                Natural moth deterrent channel
+                            </li>
+                        </ul>
+                        <div className="mt-4">
+                            <Link href="/products/garment-muslin-bag" className="text-[#A98E5D] uppercase tracking-widest text-xs font-bold hover:text-gray-900 transition-colors border-b border-[#A98E5D] pb-1 hover:border-gray-900">
+                                View Details
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-          <div className="absolute inset-0 flex items-center justify-center text-gray-400 font-light text-xs uppercase tracking-widest z-0">
-            Image: lifestyle-closet-minimal.png
-          </div>
+            {/* Section 4: The Craftsmanship (Modern Bento Grid) */}
+            <section className="py-32 px-6 md:px-12 w-full bg-gray-900 text-[#EAE4D9]">
+                <div className="max-w-7xl mx-auto space-y-16">
+                    <h2 className="text-3xl md:text-5xl font-serif text-center font-light tracking-wide drop-shadow-sm">The Craftsmanship</h2>
 
-          {/* High-res Image with slow pan animation */}
-          <div className="absolute inset-0 animate-[slowPan_25s_linear_infinite_alternate]">
-            <Image
-              src="/images/lifestyle-closet-minimal.png"
-              alt="Ecolin Lifestyle Closet"
-              fill
-              className="object-cover object-center z-10 transition-opacity duration-1000"
-              onLoad={(e) => (e.currentTarget.style.opacity = "1")}
-              style={{ opacity: 0 }}
-              priority
-            />
-          </div>
-        </div>
-
-      </section>
-
-      {/* Keep the draft Product Spotlight for now below the hero */}
-      <section className="py-24 bg-white border-t border-gray-100">
-        <ProductSpotlight />
-      </section>
-
-      <style jsx>{`
-          @keyframes fadeInUp {
-              from { opacity: 0; transform: translateY(20px); }
-              to { opacity: 1; transform: translateY(0); }
-          }
-          @keyframes slowPan {
-              from { transform: scale(1.05) translate(0, 0); }
-              to { transform: scale(1.1) translate(-2%, 2%); }
-          }
-      `}</style>
-    </main>
-  );
+                    {/* Bento Grid layout */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                        {/* Card 1 */}
+                        <div className="group relative overflow-hidden bg-white/5 border border-white/10 p-10 lg:p-12 transition-all duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)] hover:-translate-y-3 hover:border-[#8C734B]/60 hover:bg-white/10 hover:shadow-2xl hover:shadow-[#A98E5D]/10">
+                            <div className="absolute inset-0 bg-gradient-to-br from-[#A98E5D]/0 to-[#A98E5D]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 ease-out z-0"></div>
+                            <div className="relative z-10">
+                                <span className="text-[#A98E5D] text-4xl font-serif italic block mb-6 transition-transform duration-700 group-hover:translate-x-2 group-hover:-translate-y-1 origin-left">01</span>
+                                <h4 className="text-2xl font-serif text-white mb-4">Cotton Muslin</h4>
+                                <p className="text-[#EAE4D9]/70 font-light leading-relaxed text-lg transition-colors duration-700 group-hover:text-[#EAE4D9]/90">
+                                    Sourced for its tight weave and supreme breathability, creating an optimal microclimate for natural fibers like wool, silk, and cashmere.
+                                </p>
+                            </div>
+                        </div>
+                        {/* Card 2 */}
+                        <div className="group relative overflow-hidden bg-white/5 border border-white/10 p-10 lg:p-12 transition-all duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)] hover:-translate-y-3 hover:border-[#A98E5D]/60 hover:bg-white/10 hover:shadow-2xl hover:shadow-[#A98E5D]/10 md:translate-y-8">
+                            <div className="absolute inset-0 bg-gradient-to-br from-[#A98E5D]/0 to-[#A98E5D]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 ease-out z-0"></div>
+                            <div className="relative z-10">
+                                <span className="text-[#A98E5D] text-4xl font-serif italic block mb-6 transition-transform duration-700 group-hover:translate-x-2 group-hover:-translate-y-1 origin-left">02</span>
+                                <h4 className="text-2xl font-serif text-white mb-4">Acid-Free Finish</h4>
+                                <p className="text-[#EAE4D9]/70 font-light leading-relaxed text-lg transition-colors duration-700 group-hover:text-[#EAE4D9]/90">
+                                    Zero harsh chemicals or bleaches are used in our dying process, ensuring your garments remain carefully encased in a truly neutral environment.
+                                </p>
+                            </div>
+                        </div>
+                        {/* Card 3 */}
+                        <div className="group relative overflow-hidden bg-white/5 border border-white/10 p-10 lg:p-12 transition-all duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)] hover:-translate-y-3 hover:border-[#8C734B]/60 hover:bg-white/10 hover:shadow-2xl hover:shadow-[#A98E5D]/10 lg:-translate-y-4">
+                            <div className="absolute inset-0 bg-gradient-to-br from-[#A98E5D]/0 to-[#A98E5D]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 ease-out z-0"></div>
+                            <div className="relative z-10">
+                                <span className="text-[#A98E5D] text-4xl font-serif italic block mb-6 transition-transform duration-700 group-hover:translate-x-2 group-hover:-translate-y-1 origin-left">03</span>
+                                <h4 className="text-2xl font-serif text-white mb-4">Moth Deterrent</h4>
+                                <p className="text-[#EAE4D9]/70 font-light leading-relaxed text-lg transition-colors duration-700 group-hover:text-[#EAE4D9]/90">
+                                    A thoughtfully integrated, enclosed padded pocket meticulously designed to house natural cedar wood blocks or dried lavender sachets securely.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/* Section 5: Newsletter (Added Back) */}
+            <section className="py-24 px-6 md:px-12 w-full bg-[#EAE4D9]/80 border-t border-[#DBCBB5]/30">
+                <div className="max-w-4xl mx-auto text-center space-y-8">
+                    <h2 className="text-3xl md:text-5xl font-serif text-gray-900 tracking-tight">
+                        Join the <span className="italic text-[#8C734B]">Collective.</span>
+                    </h2>
+                    <p className="text-lg font-light text-gray-600 max-w-xl mx-auto">
+                        Sign up for exclusive insights on wardrobe preservation, sustainable living, and early access to archival releases.
+                    </p>
+                    <div className="max-w-md mx-auto pt-4">
+                        <NewsletterSignup idContext="home" />
+                    </div>
+                </div>
+            </section>
+        </main>
+    );
 }
+

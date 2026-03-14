@@ -1,6 +1,5 @@
 "use client";
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -8,37 +7,45 @@ export default function Navbar() {
     const pathname = usePathname();
 
     return (
-        <nav className="sticky top-0 z-50 w-full bg-white border-b border-gray-100 shadow-sm h-16 flex items-center justify-between px-6 sm:px-12 lg:px-24">
-            {/* Logo Container */}
-            <Link href="/" className="relative h-8 w-24 flex items-center">
-                <Image
-                    src="/images/logo-minimal.png"
-                    alt="ecolin"
-                    fill
-                    className="object-contain object-left"
-                    priority
-                />
-            </Link>
+        <nav className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-gray-50 h-20 flex items-center justify-between px-8 sm:px-16 lg:px-28">
+            {/* Left Side: Home Link */}
+            <div className="flex-1">
+                <Link href="/" className="font-serif text-xl tracking-wide text-gray-900 hover:text-[#A98E5D] transition-colors duration-500">
+                    Home
+                </Link>
+            </div>
 
-            {/* Navigation Links */}
-            <div className="flex space-x-8 text-sm font-light tracking-wide text-gray-600">
+            {/* Right Side Validation (Desktop) */}
+            <div className="hidden md:flex flex-1 justify-end items-center space-x-10 text-[13px] font-medium tracking-widest uppercase text-gray-500">
                 <Link
-                    href="/option-1"
-                    className={`hover:text-gray-900 transition-colors ${pathname === '/option-1' ? 'text-gray-900 font-medium' : ''}`}
+                    href="/products"
+                    className={`hover:text-gray-900 transition-colors duration-500 ${pathname.startsWith('/products') ? 'text-gray-900' : ''}`}
                 >
-                    Option 1
+                    Products
                 </Link>
                 <Link
-                    href="/option-2"
-                    className={`hover:text-gray-900 transition-colors ${pathname === '/option-2' ? 'text-gray-900 font-medium' : ''}`}
+                    href="/sustainability"
+                    className={`hover:text-gray-900 transition-colors duration-500 ${pathname === '/sustainability' ? 'text-gray-900' : ''}`}
                 >
-                    Option 2
+                    Sustainability
                 </Link>
                 <Link
-                    href="/option-3"
-                    className={`hover:text-gray-900 transition-colors ${pathname === '/option-3' ? 'text-gray-900 font-medium' : ''}`}
+                    href="/wholesale"
+                    className={`hover:text-gray-900 transition-colors duration-500 ${pathname === '/wholesale' ? 'text-gray-900' : ''}`}
                 >
-                    Option 3
+                    Wholesale
+                </Link>
+                <Link
+                    href="/faq"
+                    className={`hover:text-gray-900 transition-colors duration-500 ${pathname === '/faq' ? 'text-gray-900' : ''}`}
+                >
+                    FAQ
+                </Link>
+                <Link
+                    href="/contact"
+                    className={`hover:text-gray-900 transition-colors duration-500 ${pathname === '/contact' ? 'text-gray-900' : ''}`}
+                >
+                    Contact
                 </Link>
             </div>
         </nav>
