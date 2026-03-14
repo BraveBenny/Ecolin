@@ -16,7 +16,7 @@ export default function AboutPage() {
                 <div className="relative z-10 max-w-3xl mx-auto text-center space-y-8">
                     <span className="text-[#A98E5D] uppercase tracking-widest text-xs font-bold">Our Story</span>
                     <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif leading-tight">
-                        Redefining Garment <span className="italic text-[#A98E5D]">Preservation.</span>
+                        Redefining Garment <span className="italic text-[#A98E5D]">Preservation</span>
                     </h1>
                     <p className="text-xl font-light text-gray-600 leading-relaxed max-w-2xl mx-auto">
                         Ecolin was founded on a simple principle: the garments you treasure deserve an environment that respects their construction.

@@ -12,7 +12,7 @@ export default function WholesalePage() {
             <section className="py-24 px-6 md:px-12 w-full text-center max-w-3xl mx-auto space-y-6 bg-white">
                 <span className="text-[#A98E5D] uppercase tracking-widest text-xs font-bold block">B2B Partnerships</span>
                 <h1 className="text-4xl md:text-5xl font-serif leading-tight">
-                    Wholesale <span className="italic text-[#A98E5D]">Inquiries.</span>
+                    Wholesale <span className="italic text-[#A98E5D]">Inquiries</span>
                 </h1>
                 <p className="font-light text-gray-500 text-lg">
                     We partner with luxury dry cleaners, bespoke tailors, and premium boutiques to elevate the standard of garment care.

@@ -18,13 +18,13 @@ export default function Home() {
             <section className="relative flex flex-col md:flex-row w-full min-h-[90vh] bg-gradient-to-br from-[#EAE4D9] via-[#DBCBB5] to-[#C4B097] px-6 sm:px-12 lg:px-24 overflow-hidden">
 
                 {/* Left Column (Text) */}
-                <div className="w-full md:w-2/5 flex flex-col justify-center py-20 md:py-0 z-10 animate-[fadeIn_1s_ease-out_forwards]">
+                <div className="w-full md:w-1/2 flex flex-col justify-center py-20 md:py-0 z-10 animate-[fadeIn_1s_ease-out_forwards]">
                     <div className="max-w-xl">
                         <span className="text-[#8C734B] uppercase tracking-[0.3em] text-[10px] font-bold mb-8 block">
                             Premium Protection
                         </span>
                         <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif text-gray-900 leading-[1.1] mb-10">
-                            Breathable luxury<br />for your <span className="italic font-light text-gray-800">wardrobe.</span>
+                            Breathable luxury<br />for your <span className="italic font-light text-gray-800">wardrobe</span>
                         </h1>
                         <p className="text-gray-800/80 text-lg md:text-xl font-light mb-12 leading-relaxed max-w-lg">
                             The modern standard in garment care. Protective muslin storage designed to extend the life of your curated collection.
@@ -36,8 +36,8 @@ export default function Home() {
                 </div>
 
                 {/* Right Column (Image) */}
-                <div className="w-full md:w-3/5 relative flex items-center justify-center py-12 md:py-24 z-10">
-                    <div className="relative w-full aspect-[4/5] max-w-2xl mx-auto overflow-hidden shadow-2xl shadow-[#8C734B]/20 border border-white/20 group">
+                <div className="w-full md:w-1/2 relative flex items-center justify-center py-12 md:py-24 z-10">
+                    <div className="relative w-full aspect-[4/5] max-w-md mx-auto overflow-hidden shadow-2xl shadow-[#8C734B]/20 border border-white/20 group">
                         {/* Fallback layout visual */}
                         <div className="absolute inset-0 flex items-center justify-center text-[#8C734B] font-light text-xs uppercase tracking-widest bg-[#EAE4D9]/50 z-0">
                             Image: lifestyle-closet-minimal.png
@@ -57,7 +57,7 @@ export default function Home() {
             {/* Section 2: The Philosophy (Logo Use #1 - Watermark) */}
             <section className="relative py-32 md:py-48 px-6 w-full text-center flex items-center justify-center bg-white overflow-hidden">
                 {/* Massive Logo Watermark */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] md:w-[800px] md:h-[800px] opacity-5 pointer-events-none">
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] md:w-[800px] md:h-[800px] opacity-10 pointer-events-none animate-[pulse_8s_ease-in-out_infinite]">
                     <Image
                         src="/images/logo-minimal.png"
                         alt="Background Watermark"
@@ -68,7 +68,7 @@ export default function Home() {
 
                 <div className="relative z-10 max-w-4xl mx-auto space-y-12 px-4">
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-gray-900 tracking-tight leading-tight">
-                        The Shift from Plastic<br />to <span className="italic text-[#8C734B]">Preservation.</span>
+                        The Shift from Plastic<br />to <span className="italic text-[#8C734B]">Preservation</span>
                     </h2>
                     <div className="w-12 h-px bg-[#A98E5D] mx-auto"></div>
                     <p className="text-xl md:text-2xl font-light text-gray-700 leading-relaxed max-w-2xl mx-auto">
@@ -102,7 +102,7 @@ export default function Home() {
                             THE SIGNATURE SUIT COVER
                         </h3>
                         <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-gray-900 leading-[1.2] font-serif">
-                            Uncompromising Protection for <span className="italic text-[#8C734B]">Timeless</span> Elegance.
+                            Uncompromising Protection for <span className="italic text-[#8C734B]">Timeless</span> Elegance
                         </h2>
                         <p className="text-gray-600 leading-relaxed font-light text-lg lg:text-xl pb-6">
                             Engineered for longevity. Our signature suit cover features a sheer organza window for effortless wardrobe navigation, and an exclusive padded channel designed specifically for cedar or lavender essential oils.
@@ -131,9 +131,12 @@ export default function Home() {
             </section>
 
             {/* Section 4: The Craftsmanship (Modern Bento Grid) */}
-            <section className="py-32 px-6 md:px-12 w-full bg-gray-900 text-[#EAE4D9]">
-                <div className="max-w-7xl mx-auto space-y-16">
-                    <h2 className="text-3xl md:text-5xl font-serif text-center font-light tracking-wide drop-shadow-sm">The Craftsmanship</h2>
+            <section className="relative py-32 px-6 md:px-12 w-full bg-gray-900 text-[#EAE4D9]">
+                <div className="max-w-7xl mx-auto space-y-16 relative z-10">
+                    <div className="flex flex-col md:flex-row justify-between items-center mb-16 space-y-8 md:space-y-0 relative z-20">
+                        <h2 className="text-3xl md:text-5xl font-serif text-center md:text-left font-light tracking-wide drop-shadow-sm">The Craftsmanship</h2>
+                        <span className="font-serif text-3xl md:text-4xl italic text-[#8C734B] opacity-40">Ecolin</span>
+                    </div>
 
                     {/* Bento Grid layout */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
@@ -174,10 +177,10 @@ export default function Home() {
                 </div>
             </section>
             {/* Section 5: Newsletter (Added Back) */}
-            <section className="py-24 px-6 md:px-12 w-full bg-[#EAE4D9]/80 border-t border-[#DBCBB5]/30">
+            <section className="py-24 px-6 md:px-12 w-full bg-[#DBCBB5]/40 border-t border-[#DBCBB5]/30">
                 <div className="max-w-4xl mx-auto text-center space-y-8">
                     <h2 className="text-3xl md:text-5xl font-serif text-gray-900 tracking-tight">
-                        Join the <span className="italic text-[#8C734B]">Collective.</span>
+                        Join the <span className="italic text-[#8C734B]">Ecolin list</span>
                     </h2>
                     <p className="text-lg font-light text-gray-600 max-w-xl mx-auto">
                         Sign up for exclusive insights on wardrobe preservation, sustainable living, and early access to archival releases.

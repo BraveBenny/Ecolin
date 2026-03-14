@@ -15,7 +15,14 @@ export default function Navbar() {
                 </Link>
             </div>
 
-            {/* Right Side Validation (Desktop) */}
+            {/* Center: Wordmark */}
+            <div className="hidden md:flex flex-1 justify-center items-center">
+                <span className="font-serif text-2xl lg:text-3xl tracking-wide text-[#8C734B]">
+                    Ecolin
+                </span>
+            </div>
+
+            {/* Right Side: Links */}
             <div className="hidden md:flex flex-1 justify-end items-center space-x-10 text-[13px] font-medium tracking-widest uppercase text-gray-500">
                 <Link
                     href="/products"
@@ -24,22 +31,10 @@ export default function Navbar() {
                     Products
                 </Link>
                 <Link
-                    href="/sustainability"
-                    className={`hover:text-gray-900 transition-colors duration-500 ${pathname === '/sustainability' ? 'text-gray-900' : ''}`}
-                >
-                    Sustainability
-                </Link>
-                <Link
                     href="/wholesale"
                     className={`hover:text-gray-900 transition-colors duration-500 ${pathname === '/wholesale' ? 'text-gray-900' : ''}`}
                 >
                     Wholesale
-                </Link>
-                <Link
-                    href="/faq"
-                    className={`hover:text-gray-900 transition-colors duration-500 ${pathname === '/faq' ? 'text-gray-900' : ''}`}
-                >
-                    FAQ
                 </Link>
                 <Link
                     href="/contact"

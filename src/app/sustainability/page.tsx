@@ -12,7 +12,7 @@ export default function SustainabilityPage() {
                 <div className="relative z-10 max-w-3xl mx-auto text-center space-y-8">
                     <span className="text-[#A98E5D] uppercase tracking-widest text-xs font-bold">Responsibility</span>
                     <h1 className="text-5xl md:text-6xl font-serif leading-tight">
-                        Ending the Plastic <span className="italic text-[#A98E5D]">Era.</span>
+                        Ending the Plastic <span className="italic text-[#A98E5D]">Era</span>
                     </h1>
                     <p className="text-xl font-light text-gray-600 leading-relaxed max-w-2xl mx-auto">
                         A wardrobe built to last forever shouldn&apos;t rely on synthetic materials that pollute the earth.

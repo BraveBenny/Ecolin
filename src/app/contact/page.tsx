@@ -12,7 +12,7 @@ export default function ContactPage() {
             <section className="py-24 px-6 md:px-12 w-full text-center max-w-3xl mx-auto space-y-6 bg-white">
                 <span className="text-[#A98E5D] uppercase tracking-widest text-xs font-bold block">Get in Touch</span>
                 <h1 className="text-4xl md:text-5xl font-serif leading-tight">
-                    Contact <span className="italic text-[#A98E5D]">Ecolin.</span>
+                    Contact <span className="italic text-[#A98E5D]">Ecolin</span>
                 </h1>
                 <p className="font-light text-gray-500 text-lg">
                     We&apos;re here to assist you with inquiries about our products, your orders, or general support.

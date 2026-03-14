@@ -7,7 +7,7 @@ export default function Footer() {
                 
                 {/* Brand Identity */}
                 <div className="flex flex-col space-y-6 max-w-sm">
-                    <h3 className="font-serif text-3xl italic tracking-wide text-gray-900">Ecolin.</h3>
+                    <h3 className="font-serif text-3xl italic tracking-wide text-gray-900">Ecolin</h3>
                     <p className="text-gray-600 font-light text-sm leading-relaxed">
                         The definitive standard in breathable muslin garment care. Preserving the integrity of your curated wardrobe through sustainable, archival materials.
                     </p>
@@ -30,7 +30,7 @@ export default function Footer() {
 
             {/* Copyright & Legal */}
             <div className="max-w-7xl mx-auto mt-20 pt-8 border-t border-[#A98E5D]/10 flex flex-col md:flex-row justify-between items-center text-[11px] uppercase tracking-widest text-gray-400 font-medium">
-                <p>&copy; {new Date().getFullYear()} Ecolin. All rights reserved.</p>
+                <p>&copy; {new Date().getFullYear()} Ecolin</p>
                 <div className="flex space-x-8 mt-6 md:mt-0">
                     <a href="#" className="hover:text-gray-900 transition-colors duration-500">Privacy Policy</a>
                     <a href="#" className="hover:text-gray-900 transition-colors duration-500">Terms of Service</a>

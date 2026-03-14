@@ -13,7 +13,7 @@ export default function ProductsPage() {
             <section className="py-24 px-6 md:px-12 w-full text-center">
                 <span className="text-[#A98E5D] uppercase tracking-widest text-xs font-bold mb-6 block">Collection</span>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-gray-900 leading-[1.2]">
-                    Premium Breathable Protection <br className="hidden md:block"/>for your <span className="italic text-[#A98E5D]">Wardrobe.</span>
+                    Premium Breathable Protection <br className="hidden md:block"/>for your <span className="italic text-[#A98E5D]">Wardrobe</span>
                 </h1>
             </section>
 
