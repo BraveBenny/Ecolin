@@ -102,7 +102,7 @@ export default function Home() {
                             THE SIGNATURE SUIT COVER
                         </h3>
                         <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-gray-900 leading-[1.2] font-serif">
-                            Uncompromising Protection for <span className="italic text-[#8C734B]">Timeless</span> Elegance
+                            Uncompromising Protection for <span className="relative inline-block italic text-[#8C734B] animate-[pulse_4s_ease-in-out_infinite] drop-shadow-[0_0_8px_rgba(140,115,75,0.3)]">Timeless</span> Elegance
                         </h2>
                         <p className="text-gray-600 leading-relaxed font-light text-lg lg:text-xl pb-6">
                             Engineered for longevity. Our signature suit cover features a sheer organza window for effortless wardrobe navigation, and an exclusive padded channel designed specifically for cedar or lavender essential oils.
@@ -177,12 +177,12 @@ export default function Home() {
                 </div>
             </section>
             {/* Section 5: Newsletter (Added Back) */}
-            <section className="py-24 px-6 md:px-12 w-full bg-[#DBCBB5]/40 border-t border-[#DBCBB5]/30">
+            <section className="py-24 px-6 md:px-12 w-full bg-[#D4C5B3] border-t border-[#C4B4A1]">
                 <div className="max-w-4xl mx-auto text-center space-y-8">
                     <h2 className="text-3xl md:text-5xl font-serif text-gray-900 tracking-tight">
-                        Join the <span className="italic text-[#8C734B]">Ecolin list</span>
+                        Join the <span className="italic text-[#8C734B] drop-shadow-sm">Ecolin list</span>
                     </h2>
-                    <p className="text-lg font-light text-gray-600 max-w-xl mx-auto">
+                    <p className="text-lg font-light text-gray-800 max-w-xl mx-auto">
                         Sign up for exclusive insights on wardrobe preservation, sustainable living, and early access to archival releases.
                     </p>
                     <div className="max-w-md mx-auto pt-4">
