@@ -4,6 +4,14 @@ import Image from 'next/image';
 export const metadata: Metadata = {
     title: "About",
     description: "Learn about Ecolin's dedication to protecting your most treasured garments through premium breathable materials and craftsmanship.",
+    alternates: {
+        canonical: '/about',
+    },
+    openGraph: {
+        title: "About | Ecolin",
+        description: "Learn about Ecolin's dedication to protecting your most treasured garments through premium breathable materials and craftsmanship.",
+        url: "https://ecolin.ca/about",
+    }
 };
 
 export default function AboutPage() {

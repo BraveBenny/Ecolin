@@ -3,6 +3,14 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
     title: "Sustainability",
     description: "Discover Ecolin's commitment to sustainable, plastic-free garment care and eco-friendly manufacturing practices.",
+    alternates: {
+        canonical: '/sustainability',
+    },
+    openGraph: {
+        title: "Sustainability | Ecolin",
+        description: "Discover Ecolin's commitment to sustainable, plastic-free garment care and eco-friendly manufacturing practices.",
+        url: "https://ecolin.ca/sustainability",
+    }
 };
 
 export default function SustainabilityPage() {

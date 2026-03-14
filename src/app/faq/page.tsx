@@ -3,11 +3,71 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
     title: "FAQ",
     description: "Frequently asked questions about Ecolin's breathable muslin garment preservation systems.",
+    alternates: {
+        canonical: '/faq',
+    },
+    openGraph: {
+        title: "FAQ | Ecolin",
+        description: "Frequently asked questions about Ecolin's breathable muslin garment preservation systems.",
+        url: "https://ecolin.ca/faq",
+        type: "website",
+    }
 };
 
 export default function FAQPage() {
     return (
         <main className="flex flex-col min-h-screen bg-white text-gray-900 font-sans selection:bg-[#A98E5D] selection:text-white">
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "FAQPage",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": "Why is muslin better than plastic or nylon?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Natural fibers in clothing need to breathe. Plastic and synthetic covers trap moisture which can lead to mold and mildew. They also emit off-gassing chemicals that can permanently yellow or degrade fine fabrics over time. 100% cotton muslin acts as a physical barrier against dust and light while allowing free air circulation."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Are Ecolin bags acid-free?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. All Ecolin muslin is carefully sourced and processed to be completely acid-free, providing a chemically neutral environment that is safe for long-term archival storage of your most precious garments."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "How do I wash my Ecolin covers?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Ecolin covers are fully machine washable. We recommend washing on a gentle cycle with cold water and a mild, un-scented detergent. Tumble dry on low or hang dry. Do not use bleach or fabric softeners, as these leave residues that defeat the purpose of the acid-free environment."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "How does the moth deterrent channel work?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Our covers feature an exclusive padded, breathable inner pocket designed to hold natural cedar wood blocks or dried lavender sachets. This keeps the oils from the wood/herbs from directly contacting your garments, while allowing their natural moth-deterrent scent to permeate the bag."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Do you offer wholesale pricing?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, we partner with premium dry cleaners, tailors, and boutiques. Please visit our Wholesale page to submit an inquiry."
+                      }
+                    }
+                  ]
+                })
+              }}
+            />
             <section className="relative w-full min-h-[40vh] flex items-center justify-center bg-gray-50 px-6 py-20">
                 <div className="relative z-10 max-w-3xl mx-auto text-center space-y-6">
                     <h1 className="text-4xl md:text-5xl font-serif leading-tight">

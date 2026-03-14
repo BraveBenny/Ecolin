@@ -15,19 +15,28 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://ecolin.ca'),
   title: {
     template: "%s | Ecolin",
-    default: "Ecolin | Premium Breathable Garment Protection",
+    default: "Ecolin | Eco-Friendly Garment Storage",
   },
-  description: "The modern standard in garment care. Protective breathable muslin storage designed to extend the life of your curated wardrobe.",
+  description: "Ecolin provides premium breathable muslin garment and sweater storage bags designed for natural clothing preservation and long-term care.",
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
-    title: "Ecolin | Premium Breathable Garment Protection",
-    description: "Protective breathable muslin storage designed to extend the life of your curated wardrobe.",
-    url: "https://ecolinstorage.com",
+    title: "Ecolin | Eco-Friendly Garment Storage",
+    description: "Premium breathable muslin garment and sweater storage bags designed for natural clothing preservation.",
+    url: "https://ecolin.ca",
     siteName: "Ecolin",
     locale: "en_US",
     type: "website",
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Ecolin | Eco-Friendly Garment Storage",
+    description: "Premium breathable muslin garment and sweater storage bags designed for natural clothing preservation.",
+  }
 };
 
 export default function RootLayout({
@@ -40,6 +49,23 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Ecolin",
+              "url": "https://ecolin.ca",
+              "logo": "https://ecolin.ca/images/logo-minimal.png",
+              "description": "Ecolin provides premium eco-friendly muslin garment bags and sweater storage bags for optimal clothing preservation.",
+              "brand": {
+                "@type": "Brand",
+                "name": "Ecolin"
+              }
+            })
+          }}
+        />
         <Navbar />
         {children}
         <Footer />

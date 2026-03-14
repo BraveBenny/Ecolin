@@ -5,11 +5,31 @@ import Link from 'next/link';
 export const metadata: Metadata = {
     title: "Collection",
     description: "Explore the Ecolin collection of breathable, premium muslin garment protection covers and storage bags.",
+    alternates: {
+        canonical: '/products',
+    },
+    openGraph: {
+        title: "Collection | Ecolin",
+        description: "Explore the Ecolin collection of breathable, premium muslin garment protection covers and storage bags.",
+        url: "https://ecolin.ca/products",
+    }
 };
 
 export default function ProductsPage() {
     return (
         <main className="flex flex-col min-h-screen bg-white text-gray-900 font-sans selection:bg-[#A98E5D] selection:text-white">
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "CollectionPage",
+                  "name": "Ecolin Product Collection",
+                  "description": "Discover our collection of premium breathable muslin garment bags and sweater storage solutions.",
+                  "url": "https://ecolin.ca/products"
+                })
+              }}
+            />
             <section className="py-24 px-6 md:px-12 w-full text-center">
                 <span className="text-[#A98E5D] uppercase tracking-widest text-xs font-bold mb-6 block">Collection</span>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-gray-900 leading-[1.2]">

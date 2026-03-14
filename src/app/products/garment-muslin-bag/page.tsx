@@ -4,11 +4,36 @@ import Image from 'next/image';
 export const metadata: Metadata = {
     title: "Signature Garment Muslin Bag",
     description: "Our signature breathable muslin garment bag natively protects your suits, dresses, and coats from moisture, dust, and insects.",
+    alternates: {
+        canonical: '/products/garment-muslin-bag',
+    },
+    openGraph: {
+        title: "Signature Garment Muslin Bag | Ecolin",
+        description: "Our signature breathable muslin garment bag natively protects your suits, dresses, and coats from moisture, dust, and insects.",
+        url: "https://ecolin.ca/products/garment-muslin-bag",
+    }
 };
 
 export default function GarmentBagPage() {
     return (
         <main className="flex flex-col min-h-screen bg-white text-gray-900 font-sans selection:bg-[#A98E5D] selection:text-white pb-24">
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "Product",
+                  "name": "Signature Garment Muslin Bag",
+                  "description": "Our signature breathable muslin garment bag natively protects your suits, dresses, and coats from moisture, dust, and insects.",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "Ecolin"
+                  },
+                  "material": "100% Breathable Cotton Muslin",
+                  "color": "Muslin/Beige"
+                })
+              }}
+            />
             
             <div className="max-w-7xl mx-auto w-full px-6 md:px-12 py-12 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                 

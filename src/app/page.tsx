@@ -1,10 +1,22 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import NewsletterSignup from '@/components/forms/NewsletterSignup';
+import ScrollBloomLogo from '@/components/effects/ScrollBloomLogo';
 
 export default function Home() {
     return (
         <main className="flex flex-col min-h-screen bg-white text-gray-900 font-sans overflow-x-hidden selection:bg-[#A98E5D] selection:text-white">
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "WebSite",
+                  "name": "Ecolin",
+                  "url": "https://ecolin.ca/"
+                })
+              }}
+            />
 
             {/* The White Snow Noise Overlay (Global) for texture */}
             <div
@@ -56,15 +68,8 @@ export default function Home() {
 
             {/* Section 2: The Philosophy (Logo Use #1 - Watermark) */}
             <section className="relative py-32 md:py-48 px-6 w-full text-center flex items-center justify-center bg-white overflow-hidden">
-                {/* Massive Logo Watermark */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] md:w-[800px] md:h-[800px] opacity-10 pointer-events-none animate-[pulse_8s_ease-in-out_infinite]">
-                    <Image
-                        src="/images/logo-minimal.png"
-                        alt="Background Watermark"
-                        fill
-                        className="object-contain"
-                    />
-                </div>
+                {/* Subtle Interactive Watermark */}
+                <ScrollBloomLogo />
 
                 <div className="relative z-10 max-w-4xl mx-auto space-y-12 px-4">
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-gray-900 tracking-tight leading-tight">

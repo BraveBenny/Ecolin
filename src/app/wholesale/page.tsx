@@ -3,6 +3,14 @@ import WholesaleForm from "@/components/forms/WholesaleForm";
 export const metadata = {
     title: "Wholesale",
     description: "Partner with Ecolin. We supply premium breathable muslin garment covers to dry cleaners, tailors, and luxury boutiques.",
+    alternates: {
+        canonical: '/wholesale',
+    },
+    openGraph: {
+        title: "Wholesale | Ecolin",
+        description: "Partner with Ecolin. We supply premium breathable muslin garment covers to dry cleaners, tailors, and luxury boutiques.",
+        url: "https://ecolin.ca/wholesale",
+    }
 };
 
 export default function WholesalePage() {

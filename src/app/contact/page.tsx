@@ -3,6 +3,14 @@ import ContactForm from "@/components/forms/ContactForm";
 export const metadata = {
     title: "Contact",
     description: "Get in touch with Ecolin for general inquiries, support, or questions about our garment preservation collections.",
+    alternates: {
+        canonical: '/contact',
+    },
+    openGraph: {
+        title: "Contact | Ecolin",
+        description: "Get in touch with Ecolin for general inquiries, support, or questions about our garment preservation collections.",
+        url: "https://ecolin.ca/contact",
+    }
 };
 
 export default function ContactPage() {

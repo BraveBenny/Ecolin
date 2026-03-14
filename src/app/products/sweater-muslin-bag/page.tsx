@@ -3,11 +3,36 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
     title: "Signature Sweater Muslin Bag",
     description: "Our breathable muslin sweater bag protects your cherished knitwear, cashmere, and wool from damage, moisture, and moths without crushing natural fibers.",
+    alternates: {
+        canonical: '/products/sweater-muslin-bag',
+    },
+    openGraph: {
+        title: "Signature Sweater Muslin Bag | Ecolin",
+        description: "Our breathable muslin sweater bag protects your cherished knitwear, cashmere, and wool from damage, moisture, and moths without crushing natural fibers.",
+        url: "https://ecolin.ca/products/sweater-muslin-bag",
+    }
 };
 
 export default function SweaterBagPage() {
     return (
         <main className="flex flex-col min-h-screen bg-white text-gray-900 font-sans selection:bg-[#A98E5D] selection:text-white pb-24">
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "Product",
+                  "name": "Sweater Muslin Storage Bag",
+                  "description": "Protect your fine cashmere and wool knits from moths and dust with our breathable muslin sweater storage bags.",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "Ecolin"
+                  },
+                  "material": "100% Breathable Cotton Muslin",
+                  "color": "Muslin/Beige"
+                })
+              }}
+            />
             
             <div className="max-w-7xl mx-auto w-full px-6 md:px-12 py-12 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                 
