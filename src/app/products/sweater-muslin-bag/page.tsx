@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
     title: "Signature Sweater Muslin Bag",
@@ -39,10 +40,15 @@ export default function SweaterBagPage() {
                 {/* Product Image Gallery */}
                 <div className="sticky top-24 w-full h-[600px] md:h-[800px] bg-[#F9F8F6] flex items-center justify-center p-8 overflow-hidden rounded-sm border border-gray-100">
                     <div className="absolute inset-0 flex items-center justify-center text-gray-300 font-light text-xs uppercase tracking-widest z-0">
-                        Placeholder: sweater-bag.png
+                        Image: sweater-muslin-bag-main.png
                     </div>
-                    {/* Placeholder for when image arrives */}
-                    <div className="z-10 text-gray-400 font-serif italic text-3xl">Sweater & Knitwear</div>
+                    <Image
+                        src="/images/sweater-muslin-bag-main.png"
+                        alt="Signature Sweater Muslin Bag"
+                        fill
+                        className="object-contain z-10 p-8 md:p-16 hover:scale-105 transition-transform duration-1000 ease-out"
+                        priority
+                    />
                 </div>
 
                 {/* Product Info */}

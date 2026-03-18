@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import NewsletterSignup from '@/components/forms/NewsletterSignup';
 import ScrollBloomLogo from '@/components/effects/ScrollBloomLogo';
+import HeroImageCarousel from '@/components/effects/HeroImageCarousel';
 
 export default function Home() {
     return (
@@ -50,18 +51,7 @@ export default function Home() {
                 {/* Right Column (Image) */}
                 <div className="w-full md:w-1/2 relative flex items-center justify-center py-12 md:py-24 z-10">
                     <div className="relative w-full aspect-[4/5] max-w-md mx-auto overflow-hidden shadow-2xl shadow-[#8C734B]/20 border border-white/20 group">
-                        {/* Fallback layout visual */}
-                        <div className="absolute inset-0 flex items-center justify-center text-[#8C734B] font-light text-xs uppercase tracking-widest bg-[#EAE4D9]/50 z-0">
-                            Image: lifestyle-closet-minimal.png
-                        </div>
-                        {/* We shouldn't use style opacity hacks alongside Tailwind if doing static optimization */}
-                        <Image
-                            src="/images/lifestyle-closet-minimal.png"
-                            alt="Ecolin Lifestyle Closet"
-                            fill
-                            className="object-cover object-center z-10 transition-transform duration-[1.5s] ease-out group-hover:scale-105"
-                            priority
-                        />
+                        <HeroImageCarousel />
                     </div>
                 </div>
             </section>
@@ -174,7 +164,7 @@ export default function Home() {
                                 <span className="text-[#A98E5D] text-4xl font-serif italic block mb-6 transition-transform duration-700 group-hover:translate-x-2 group-hover:-translate-y-1 origin-left">03</span>
                                 <h4 className="text-2xl font-serif text-white mb-4">Moth Deterrent</h4>
                                 <p className="text-[#EAE4D9]/70 font-light leading-relaxed text-lg transition-colors duration-700 group-hover:text-[#EAE4D9]/90">
-                                    A thoughtfully integrated, enclosed padded pocket meticulously designed to house natural cedar wood blocks or dried lavender sachets securely.
+                                    Crafted from breathable, natural cotton muslin, the bag allows air to circulate freely around your garments, helping prevent the damp, enclosed environments where moths thrive. This natural breathability provides a simple, chemical-free way to help protect delicate fabrics during long-term storage.
                                 </p>
                             </div>
                         </div>
