@@ -171,6 +171,60 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+            {/* Section 4.5: Product Spotlight - Sweater Bag */}
+            <section className="py-24 px-6 md:px-12 w-full bg-[#F9F8F6]">
+                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-24 items-center">
+
+                    {/* Left: Text (Swapped for visual balance using order-2 md:order-1) */}
+                    <div className="flex flex-col space-y-8 z-10 order-2 md:order-1">
+                        <h3 className="text-[#A98E5D] uppercase tracking-[0.3em] text-[10px] font-bold">
+                            THE SWEATER BAG
+                        </h3>
+                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-gray-900 leading-[1.2] font-serif">
+                            Refined Storage for <span className="relative inline-block italic text-[#8C734B] animate-[pulse_4s_ease-in-out_infinite] drop-shadow-[0_0_8px_rgba(140,115,75,0.3)]">Delicate</span> Knitwear
+                        </h2>
+                        <p className="text-gray-600 leading-relaxed font-light text-lg lg:text-xl pb-6">
+                            Protective breathable storage designed specifically for cashmere and wool. Our sweater muslin bag preserves the softness and structure of your most delicate folded garments.
+                        </p>
+                        <ul className="space-y-6 font-light text-gray-700 text-lg mb-8">
+                            <li className="flex items-center">
+                                <span className="w-1.5 h-1.5 bg-[#A98E5D] rounded-full mr-4 shadow-sm shadow-[#A98E5D]/50 shrink-0"></span>
+                                Breathable cotton muslin
+                            </li>
+                            <li className="flex items-center">
+                                <span className="w-1.5 h-1.5 bg-[#A98E5D] rounded-full mr-4 shadow-sm shadow-[#A98E5D]/50 shrink-0"></span>
+                                Ideal for folded knitwear
+                            </li>
+                            <li className="flex items-center">
+                                <span className="w-1.5 h-1.5 bg-[#A98E5D] rounded-full mr-4 shadow-sm shadow-[#A98E5D]/50 shrink-0"></span>
+                                Preserves softness and structure
+                            </li>
+                        </ul>
+                        <div className="mt-4">
+                            <Link href="/products/sweater-muslin-bag" className="text-[#A98E5D] uppercase tracking-widest text-xs font-bold hover:text-gray-900 transition-colors border-b border-[#A98E5D] pb-1 hover:border-gray-900">
+                                View Details
+                            </Link>
+                        </div>
+                    </div>
+
+                    {/* Right: Image (Swapped for visual balance using order-1 md:order-2) */}
+                    <div className="relative w-full h-[600px] md:h-[800px] flex items-center justify-center p-8 lg:p-12 group perspective-1000 order-1 md:order-2">
+                        {/* Decorative refined frame */}
+                        <div className="absolute inset-4 md:inset-8 border border-[#A98E5D]/20 bg-white/40 backdrop-blur-sm z-0 transition-transform duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-[1.02] group-hover:shadow-2xl group-hover:shadow-[rgba(169,142,93,0.15)] rounded-sm"></div>
+                        <div className="absolute inset-0 flex items-center justify-center text-gray-300 font-light text-xs uppercase tracking-widest z-0 pointer-events-none">
+                            Image: sweater-muslin-bag-main.png
+                        </div>
+                        <Image
+                            src="/images/sweater-muslin-bag-main.png"
+                            alt="The Sweater Bag"
+                            fill
+                            className="object-contain z-10 p-12 md:p-20 transition-all duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:-translate-y-4 group-hover:scale-105"
+                        />
+                    </div>
+
+                </div>
+            </section>
+
             {/* Section 5: Newsletter (Added Back) */}
             <section className="py-24 px-6 md:px-12 w-full bg-[#D4C5B3] border-t border-[#C4B4A1]">
                 <div className="max-w-4xl mx-auto text-center space-y-8">
