@@ -3,6 +3,7 @@ import Link from 'next/link';
 import NewsletterSignup from '@/components/forms/NewsletterSignup';
 import ScrollBloomLogo from '@/components/effects/ScrollBloomLogo';
 import HeroImageCarousel from '@/components/effects/HeroImageCarousel';
+import BrandSignatureSection from '@/components/BrandSignatureSection';
 
 export default function Home() {
     return (
@@ -239,6 +240,9 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+
+            {/* Section 4.75: Brand Signature */}
+            <BrandSignatureSection />
         </main>
     );
 }
