@@ -87,18 +87,23 @@ export default function GarmentBagPage() {
                     </ul>
 
                     {/* Shop Action */}
-                    <div className="bg-gray-50 border border-gray-100 p-8 flex flex-col space-y-6">
-                        <p className="text-sm font-light text-gray-500 italic">
-                            You will be redirected to our official partner store to complete your purchase securely.
+                    <div className="bg-gray-50 border border-gray-100 p-8 flex flex-col items-center text-center space-y-6">
+                        <p className="text-sm font-light text-gray-600 leading-relaxed">
+                            You are about to continue to our partner store, Treasury Boxes, where you can securely complete your purchase.
                         </p>
-                        <a 
-                            href="https://example.com/shop/ecolin" // Placeholder external redirect
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="bg-gray-900 text-white hover:bg-[#A98E5D] transition-colors duration-500 rounded-none px-12 py-5 uppercase tracking-widest text-sm font-bold shadow-md shadow-gray-900/10 text-center w-full"
-                        >
-                            Shop Now
-                        </a>
+                        <div className="w-full flex flex-col items-center">
+                            <a 
+                                href="https://www.treasuryboxes.com/ecolin-muslin-bags"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-gray-900 text-white hover:bg-[#A98E5D] transition-colors duration-500 rounded-none px-12 py-4 uppercase tracking-widest text-sm font-bold shadow-md shadow-gray-900/10 text-center w-full block"
+                            >
+                                Shop the Collection
+                            </a>
+                            <span className="text-[11px] text-gray-400 mt-3 font-light tracking-widest uppercase">
+                                Secure checkout via Treasury Boxes
+                            </span>
+                        </div>
                     </div>
                 </div>
 

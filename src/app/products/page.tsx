@@ -40,40 +40,80 @@ export default function ProductsPage() {
             <section className="pb-32 px-6 md:px-12 w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
                 
                 {/* Product 1: The Garment Bag */}
-                <Link href="/products/garment-muslin-bag" className="group flex flex-col items-center">
-                    <div className="relative w-full aspect-[4/5] bg-[#F9F8F6] flex items-center justify-center p-8 mb-8 overflow-hidden">
-                        <div className="absolute inset-0 flex items-center justify-center text-gray-300 font-light text-xs uppercase tracking-widest z-0">
-                            Image: product-suit-cover.png
+                <div className="group flex flex-col items-center w-full">
+                    <Link href="/products/garment-muslin-bag" className="flex flex-col items-center w-full block">
+                        <div className="relative w-full aspect-[4/5] bg-[#F9F8F6] flex items-center justify-center p-8 mb-8 overflow-hidden">
+                            <div className="absolute inset-0 flex items-center justify-center text-gray-300 font-light text-xs uppercase tracking-widest z-0">
+                                Image: product-suit-cover.png
+                            </div>
+                            <Image
+                                src="/images/product-suit-cover.png"
+                                alt="Signature Garment Muslin Bag"
+                                fill
+                                className="object-contain z-10 p-8 md:p-12 transition-transform duration-[1.5s] ease-out group-hover:scale-105"
+                            />
                         </div>
-                        <Image
-                            src="/images/product-suit-cover.png"
-                            alt="Signature Garment Muslin Bag"
-                            fill
-                            className="object-contain z-10 p-8 md:p-12 transition-transform duration-[1.5s] ease-out group-hover:scale-105"
-                        />
+                        <h2 className="text-2xl font-serif text-gray-900 mb-2 group-hover:text-[#A98E5D] transition-colors">The Signature Garment Bag</h2>
+                        <p className="font-light text-gray-500 mb-8 text-center">For Suits, Coats, and Dresses</p>
+                    </Link>
+
+                    <div className="flex flex-col items-center text-center space-y-4 w-full">
+                        <a 
+                            href="https://www.treasuryboxes.com/ecolin-muslin-bags"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-gray-900 text-white hover:bg-[#A98E5D] transition-colors duration-500 py-4 px-8 uppercase tracking-widest text-xs font-bold w-full max-w-[320px] text-center shadow-md shadow-gray-900/5 block"
+                        >
+                            Shop the Collection
+                        </a>
+                        <div className="flex flex-col items-center space-y-2">
+                            <span className="text-[10px] text-gray-400 font-light tracking-widest uppercase">
+                                Secure checkout via Treasury Boxes
+                            </span>
+                            <p className="text-xs font-light text-gray-500 leading-relaxed max-w-xs mt-2 italic">
+                                You are about to continue to our partner store, Treasury Boxes, where you can securely complete your purchase.
+                            </p>
+                        </div>
                     </div>
-                    <h2 className="text-2xl font-serif text-gray-900 mb-2 group-hover:text-[#A98E5D] transition-colors">The Signature Garment Bag</h2>
-                    <p className="font-light text-gray-500 mb-4">For Suits, Coats, and Dresses</p>
-                    <span className="text-[#A98E5D] uppercase tracking-widest text-xs font-bold border-b border-transparent group-hover:border-[#A98E5D] transition-colors pb-1">Explore</span>
-                </Link>
+                </div>
 
                 {/* Product 2: The Sweater Bag */}
-                <Link href="/products/sweater-muslin-bag" className="group flex flex-col items-center">
-                    <div className="relative w-full aspect-[4/5] bg-[#F9F8F6] flex items-center justify-center p-8 mb-8 overflow-hidden">
-                        <div className="absolute inset-0 flex items-center justify-center text-gray-300 font-light text-xs uppercase tracking-widest z-0">
-                            Image: sweater-muslin-bag-main.png
+                <div className="group flex flex-col items-center w-full">
+                    <Link href="/products/sweater-muslin-bag" className="flex flex-col items-center w-full block">
+                        <div className="relative w-full aspect-[4/5] bg-[#F9F8F6] flex items-center justify-center p-8 mb-8 overflow-hidden">
+                            <div className="absolute inset-0 flex items-center justify-center text-gray-300 font-light text-xs uppercase tracking-widest z-0">
+                                Image: sweater-muslin-bag-main.png
+                            </div>
+                            <Image
+                                src="/images/sweater-muslin-bag-main.png"
+                                alt="Signature Sweater Muslin Bag"
+                                fill
+                                className="object-contain z-10 p-8 md:p-12 transition-transform duration-[1.5s] ease-out group-hover:scale-105"
+                            />
                         </div>
-                        <Image
-                            src="/images/sweater-muslin-bag-main.png"
-                            alt="Signature Sweater Muslin Bag"
-                            fill
-                            className="object-contain z-10 p-8 md:p-12 transition-transform duration-[1.5s] ease-out group-hover:scale-105"
-                        />
+                        <h2 className="text-2xl font-serif text-gray-900 mb-2 group-hover:text-[#A98E5D] transition-colors">The Sweater Bag</h2>
+                        <p className="font-light text-gray-500 mb-8 text-center">For Cashmere, Wool, and Chunky Knits</p>
+                    </Link>
+
+                    <div className="flex flex-col items-center text-center space-y-4 w-full">
+                        <a 
+                            href="https://www.treasuryboxes.com/ecolin-muslin-bags"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-gray-900 text-white hover:bg-[#A98E5D] transition-colors duration-500 py-4 px-8 uppercase tracking-widest text-xs font-bold w-full max-w-[320px] text-center shadow-md shadow-gray-900/5 block"
+                        >
+                            Shop the Collection
+                        </a>
+                        <div className="flex flex-col items-center space-y-2">
+                            <span className="text-[10px] text-gray-400 font-light tracking-widest uppercase">
+                                Secure checkout via Treasury Boxes
+                            </span>
+                            <p className="text-xs font-light text-gray-500 leading-relaxed max-w-xs mt-2 italic">
+                                You are about to continue to our partner store, Treasury Boxes, where you can securely complete your purchase.
+                            </p>
+                        </div>
                     </div>
-                    <h2 className="text-2xl font-serif text-gray-900 mb-2 group-hover:text-[#A98E5D] transition-colors">The Sweater Bag</h2>
-                    <p className="font-light text-gray-500 mb-4">For Cashmere, Wool, and Chunky Knits</p>
-                    <span className="text-[#A98E5D] uppercase tracking-widest text-xs font-bold border-b border-transparent group-hover:border-[#A98E5D] transition-colors pb-1">Explore</span>
-                </Link>
+                </div>
 
             </section>
         </main>
