@@ -31,7 +31,7 @@ export default function ProductsPage() {
               }}
             />
             <section className="py-24 px-6 md:px-12 w-full text-center">
-                <span className="text-[#A98E5D] uppercase tracking-widest text-xs font-bold mb-6 block">Collection</span>
+                <span className="text-[#A98E5D] uppercase tracking-widest text-[14px] font-bold mb-6 block">Collection</span>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-gray-900 leading-[1.2]">
                     Premium Breathable Protection <br className="hidden md:block"/>for your <span className="italic text-[#A98E5D]">Wardrobe</span>
                 </h1>
@@ -53,27 +53,18 @@ export default function ProductsPage() {
                                 className="object-contain z-10 p-8 md:p-12 transition-transform duration-[1.5s] ease-out group-hover:scale-105"
                             />
                         </div>
-                        <h2 className="text-2xl font-serif text-gray-900 mb-2 group-hover:text-[#A98E5D] transition-colors">The Signature Garment Bag</h2>
-                        <p className="font-light text-gray-500 mb-8 text-center">For Suits, Coats, and Dresses</p>
+                        <p className="text-[14px] text-[#8C734B] font-light mb-2 text-center">$18.99 USD</p>
+                        <h2 className="text-2xl font-serif text-gray-900 mb-2 group-hover:text-[#A98E5D] transition-colors">Garment Bag</h2>
+                        <p className="font-light text-gray-500 mb-8 text-center">For suits, coats, and similar-sized garments.</p>
                     </Link>
 
                     <div className="flex flex-col items-center text-center space-y-4 w-full">
-                        <a 
-                            href="https://www.treasuryboxes.com/ecolin-muslin-bags"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                        <Link 
+                            href="/products/garment-muslin-bag"
                             className="bg-gray-900 text-white hover:bg-[#A98E5D] transition-colors duration-500 py-4 px-8 uppercase tracking-widest text-xs font-bold w-full max-w-[320px] text-center shadow-md shadow-gray-900/5 block"
                         >
-                            Shop the Collection
-                        </a>
-                        <div className="flex flex-col items-center space-y-2">
-                            <span className="text-[10px] text-gray-400 font-light tracking-widest uppercase">
-                                Secure checkout via Treasury Boxes
-                            </span>
-                            <p className="text-xs font-light text-gray-500 leading-relaxed max-w-xs mt-2 italic">
-                                You are about to continue to our partner store, Treasury Boxes, where you can securely complete your purchase.
-                            </p>
-                        </div>
+                            View Details
+                        </Link>
                     </div>
                 </div>
 
@@ -91,27 +82,18 @@ export default function ProductsPage() {
                                 className="object-contain z-10 p-8 md:p-12 transition-transform duration-[1.5s] ease-out group-hover:scale-105"
                             />
                         </div>
-                        <h2 className="text-2xl font-serif text-gray-900 mb-2 group-hover:text-[#A98E5D] transition-colors">The Sweater Bag</h2>
-                        <p className="font-light text-gray-500 mb-8 text-center">For Cashmere, Wool, and Chunky Knits</p>
+                        <p className="text-[14px] text-[#8C734B] font-light mb-2 text-center">$14.99 USD</p>
+                        <h2 className="text-2xl font-serif text-gray-900 mb-2 group-hover:text-[#A98E5D] transition-colors">Sweater Bag</h2>
+                        <p className="font-light text-gray-500 mb-8 text-center">For sweaters, blankets, and folded knits.</p>
                     </Link>
 
                     <div className="flex flex-col items-center text-center space-y-4 w-full">
-                        <a 
-                            href="https://www.treasuryboxes.com/ecolin-muslin-bags"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                        <Link 
+                            href="/products/sweater-muslin-bag"
                             className="bg-gray-900 text-white hover:bg-[#A98E5D] transition-colors duration-500 py-4 px-8 uppercase tracking-widest text-xs font-bold w-full max-w-[320px] text-center shadow-md shadow-gray-900/5 block"
                         >
-                            Shop the Collection
-                        </a>
-                        <div className="flex flex-col items-center space-y-2">
-                            <span className="text-[10px] text-gray-400 font-light tracking-widest uppercase">
-                                Secure checkout via Treasury Boxes
-                            </span>
-                            <p className="text-xs font-light text-gray-500 leading-relaxed max-w-xs mt-2 italic">
-                                You are about to continue to our partner store, Treasury Boxes, where you can securely complete your purchase.
-                            </p>
-                        </div>
+                            View Details
+                        </Link>
                     </div>
                 </div>
 

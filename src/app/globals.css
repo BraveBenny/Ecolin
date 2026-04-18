@@ -24,3 +24,55 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Luxury Editorial Animations for BrandSignatureSection */
+@media (prefers-reduced-motion: no-preference) {
+  .anim-divider { will-change: transform, opacity; transition: width 1.2s ease-in-out; }
+  .anim-divider.animate-ready { width: 0%; }
+  .anim-divider.animate-visible { width: 100%; }
+
+  .anim-logo { will-change: transform, opacity; transition: opacity 1.4s ease-out 0.3s, transform 1.4s ease-out 0.3s; }
+  .anim-logo.animate-ready { opacity: 0; transform: translateY(16px); }
+  .anim-logo.animate-visible { opacity: 1; transform: translateY(0); }
+
+  .anim-tagline { will-change: transform, opacity, letter-spacing; transition: opacity 1.2s ease-out 0.8s, letter-spacing 1.2s ease-out 0.8s; }
+  .anim-tagline.animate-ready { opacity: 0; letter-spacing: 0.1em; }
+  .anim-tagline.animate-visible { opacity: 1; letter-spacing: 0.3em; }
+
+  .anim-card-left { will-change: transform, opacity; transition: opacity 1.2s ease-out 0.5s, transform 1.2s ease-out 0.5s; }
+  .anim-card-left.animate-ready { opacity: 0; transform: translateX(-24px); }
+  .anim-card-left.animate-visible { opacity: 1; transform: translateX(0); }
+
+  .anim-card-right { will-change: transform, opacity; transition: opacity 1.2s ease-out 0.7s, transform 1.2s ease-out 0.7s; }
+  .anim-card-right.animate-ready { opacity: 0; transform: translateX(24px); }
+  .anim-card-right.animate-visible { opacity: 1; transform: translateX(0); }
+
+  .anim-title-left { will-change: transform, opacity; transition: opacity 0.8s ease-out 2.0s, transform 0.8s ease-out 2.0s; }
+  .anim-title-left.animate-ready { opacity: 0; transform: translateY(8px); }
+  .anim-title-left.animate-visible { opacity: 1; transform: translateY(0); }
+
+  .anim-title-right { will-change: transform, opacity; transition: opacity 0.8s ease-out 2.2s, transform 0.8s ease-out 2.2s; }
+  .anim-title-right.animate-ready { opacity: 0; transform: translateY(8px); }
+  .anim-title-right.animate-visible { opacity: 1; transform: translateY(0); }
+
+  .anim-bullet-left-1 { transition: opacity 0.6s ease-out 2.8s; will-change: opacity; }
+  .anim-bullet-left-2 { transition: opacity 0.6s ease-out 2.92s; will-change: opacity; }
+  .anim-bullet-left-3 { transition: opacity 0.6s ease-out 3.04s; will-change: opacity; }
+  .anim-bullet-right-1 { transition: opacity 0.6s ease-out 3.0s; will-change: opacity; }
+  .anim-bullet-right-2 { transition: opacity 0.6s ease-out 3.12s; will-change: opacity; }
+  .anim-bullet-right-3 { transition: opacity 0.6s ease-out 3.24s; will-change: opacity; }
+
+  .anim-bullet-left-1.animate-ready, .anim-bullet-left-2.animate-ready, .anim-bullet-left-3.animate-ready,
+  .anim-bullet-right-1.animate-ready, .anim-bullet-right-2.animate-ready, .anim-bullet-right-3.animate-ready { opacity: 0; }
+  
+  .anim-bullet-left-1.animate-visible, .anim-bullet-left-2.animate-visible, .anim-bullet-left-3.animate-visible,
+  .anim-bullet-right-1.animate-visible, .anim-bullet-right-2.animate-visible, .anim-bullet-right-3.animate-visible { opacity: 1; }
+
+  @keyframes kenBurnsSlow { from { transform: scale(1.03); } to { transform: scale(1.00); } }
+  .anim-ken-burns { animation: kenBurnsSlow 2.5s ease-out forwards; will-change: transform; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-ready { width: 100% !important; opacity: 1 !important; transform: none !important; letter-spacing: inherit !important; }
+  .anim-tagline.animate-ready { letter-spacing: 0.3em !important; }
+}

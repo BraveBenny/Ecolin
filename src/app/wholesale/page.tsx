@@ -33,7 +33,7 @@ export default function WholesalePage() {
                     <ul className="space-y-3 font-light text-gray-600 text-sm">
                         <li className="flex items-start">
                             <span className="text-[#A98E5D] mr-2">•</span>
-                            Differentiation: Offer clients a sustainable, premium alternative to plastic poly bags.
+                            Added Value: Offer clients a sustainable, premium alternative to plastic poly bags.
                         </li>
                         <li className="flex items-start">
                             <span className="text-[#A98E5D] mr-2">•</span>

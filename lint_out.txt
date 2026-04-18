@@ -1,0 +1,16 @@
+
+> temp-app@0.1.0 lint
+> eslint
+
+
+/Users/ben/Desktop/ECOLIN W/ecolin-website/src/app/actions/sendEmail.ts
+   9:51  error    Unexpected any. Specify a different type   @typescript-eslint/no-explicit-any
+  30:17  warning  'data' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  51:53  error    Unexpected any. Specify a different type   @typescript-eslint/no-explicit-any
+  76:17  warning  'data' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/ben/Desktop/ECOLIN W/ecolin-website/src/components/BrandSignatureSection.tsx
+  27:8  warning  React Hook useEffect has a missing dependency: 'options'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+✖ 5 problems (2 errors, 3 warnings)
+

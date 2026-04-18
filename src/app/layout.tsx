@@ -21,6 +21,9 @@ export const metadata: Metadata = {
     default: "Ecolin | Eco-Friendly Garment Storage",
   },
   description: "Ecolin provides premium breathable muslin garment and sweater storage bags designed for natural clothing preservation and long-term care.",
+  icons: {
+    icon: '/images/logo-minimal.png',
+  },
   alternates: {
     canonical: '/',
   },

@@ -34,14 +34,14 @@ export default function Home() {
                 {/* Left Column (Text) */}
                 <div className="w-full md:w-1/2 flex flex-col justify-center py-20 md:py-0 z-10 animate-[fadeIn_1s_ease-out_forwards]">
                     <div className="max-w-xl">
-                        <span className="text-[#8C734B] uppercase tracking-[0.3em] text-[10px] font-bold mb-8 block">
+                        <span className="text-[#8C734B] uppercase tracking-[0.3em] text-[12px] font-bold mb-8 block">
                             Premium Protection
                         </span>
                         <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif text-gray-900 leading-[1.1] mb-10">
-                            Breathable luxury<br />for your <span className="italic font-light text-gray-800">wardrobe</span>
+                            Luxurious protection<br />for your <span className="italic font-light text-gray-800">wardrobe</span>
                         </h1>
                         <p className="text-gray-800/80 text-lg md:text-xl font-light mb-12 leading-relaxed max-w-lg">
-                            The modern standard in garment care. Protective muslin storage designed to extend the life of your curated collection.
+                            The modern standard in garment care. Protective muslin storage designed to extend the life of your garments.
                         </p>
                         <Link href="/products" className="inline-block bg-gray-900 text-white px-10 py-5 uppercase tracking-widest text-xs font-bold transition-all duration-700 ease-out hover:bg-white hover:text-gray-900 border border-transparent hover:border-gray-900 hover:-translate-y-1 shadow-xl shadow-gray-900/10">
                             Discover the Collection
@@ -64,11 +64,11 @@ export default function Home() {
 
                 <div className="relative z-10 max-w-4xl mx-auto space-y-12 px-4">
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-gray-900 tracking-tight leading-tight">
-                        The Shift from Plastic<br />to <span className="italic text-[#8C734B]">Preservation</span>
+                        The Shift from Plastic<br />to <span className="italic text-[#8C734B]">Protection</span>
                     </h2>
                     <div className="w-12 h-px bg-[#A98E5D] mx-auto"></div>
                     <p className="text-xl md:text-2xl font-light text-gray-700 leading-relaxed max-w-2xl mx-auto">
-                        Everything needs protection, why not your precious clothes. High-end garments require the ability to breathe in order to maintain their structural and textile integrity. Plastic traps off-gassing chemicals and moisture, silently deteriorating fabrics over time.
+                        Everything needs protection, why not your precious clothes. Garments require the ability to breathe in order to maintain their structural and textile integrity. Plastic traps off-gassing chemicals and moisture, silently deteriorating fabrics over time.
                     </p>
                 </div>
             </section>
@@ -94,27 +94,27 @@ export default function Home() {
 
                     {/* Right: Text */}
                     <div className="flex flex-col space-y-8 z-10">
-                        <h3 className="text-[#A98E5D] uppercase tracking-[0.3em] text-[10px] font-bold">
-                            THE SIGNATURE SUIT COVER
+                        <h3 className="text-[#A98E5D] uppercase tracking-[0.3em] text-[12px] font-bold">
+                            THE SIGNATURE GARMENT COVER
                         </h3>
                         <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-gray-900 leading-[1.2] font-serif">
                             Uncompromising Protection for <span className="relative inline-block italic text-[#8C734B] animate-[pulse_4s_ease-in-out_infinite] drop-shadow-[0_0_8px_rgba(140,115,75,0.3)]">Timeless</span> Elegance
                         </h2>
                         <p className="text-gray-600 leading-relaxed font-light text-lg lg:text-xl pb-6">
-                            Engineered for longevity. Our signature suit cover features a sheer organza window for effortless wardrobe navigation, and an exclusive padded channel designed specifically for cedar or lavender essential oils.
+                            Engineered for longevity, our signature garment cover features a sheer organza window for effortless wardrobe navigation and exclusive padded piping designed to absorb cedar or lavender essential oils.
                         </p>
                         <ul className="space-y-6 font-light text-gray-700 text-lg mb-8">
                             <li className="flex items-center">
                                 <span className="w-1.5 h-1.5 bg-[#A98E5D] rounded-full mr-4 shadow-sm shadow-[#A98E5D]/50 shrink-0"></span>
-                                100% Breathable Cotton Muslin
+                                100% breathable muslin
                             </li>
                             <li className="flex items-center">
                                 <span className="w-1.5 h-1.5 bg-[#A98E5D] rounded-full mr-4 shadow-sm shadow-[#A98E5D]/50 shrink-0"></span>
-                                Acid-free preservation environment
+                                Acid-free protective environment
                             </li>
                             <li className="flex items-center">
                                 <span className="w-1.5 h-1.5 bg-[#A98E5D] rounded-full mr-4 shadow-sm shadow-[#A98E5D]/50 shrink-0"></span>
-                                Natural moth deterrent channel
+                                Natural moth and bug deterrent
                             </li>
                         </ul>
                         <div className="mt-4">
@@ -141,7 +141,7 @@ export default function Home() {
                             <div className="absolute inset-0 bg-gradient-to-br from-[#A98E5D]/0 to-[#A98E5D]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 ease-out z-0"></div>
                             <div className="relative z-10">
                                 <span className="text-[#A98E5D] text-4xl font-serif italic block mb-6 transition-transform duration-700 group-hover:translate-x-2 group-hover:-translate-y-1 origin-left">01</span>
-                                <h4 className="text-2xl font-serif text-white mb-4">Cotton Muslin</h4>
+                                <h4 className="text-2xl font-serif text-white mb-4">Muslin</h4>
                                 <p className="text-[#EAE4D9]/70 font-light leading-relaxed text-lg transition-colors duration-700 group-hover:text-[#EAE4D9]/90">
                                     Sourced for its tight weave and supreme breathability, creating an optimal microclimate for natural fibers like wool, silk, and cashmere.
                                 </p>
@@ -154,7 +154,7 @@ export default function Home() {
                                 <span className="text-[#A98E5D] text-4xl font-serif italic block mb-6 transition-transform duration-700 group-hover:translate-x-2 group-hover:-translate-y-1 origin-left">02</span>
                                 <h4 className="text-2xl font-serif text-white mb-4">Acid-Free Finish</h4>
                                 <p className="text-[#EAE4D9]/70 font-light leading-relaxed text-lg transition-colors duration-700 group-hover:text-[#EAE4D9]/90">
-                                    Zero harsh chemicals or bleaches are used in our dying process, ensuring your garments remain carefully encased in a truly neutral environment.
+                                    Zero harsh chemicals or bleaches are used in the production process, ensuring your garments remain safely encased in a truly neutral protective environment.
                                 </p>
                             </div>
                         </div>
@@ -165,7 +165,7 @@ export default function Home() {
                                 <span className="text-[#A98E5D] text-4xl font-serif italic block mb-6 transition-transform duration-700 group-hover:translate-x-2 group-hover:-translate-y-1 origin-left">03</span>
                                 <h4 className="text-2xl font-serif text-white mb-4">Moth Deterrent</h4>
                                 <p className="text-[#EAE4D9]/70 font-light leading-relaxed text-lg transition-colors duration-700 group-hover:text-[#EAE4D9]/90">
-                                    Crafted from breathable, natural cotton muslin, the bag allows air to circulate freely around your garments, helping prevent the damp, enclosed environments where moths thrive. This natural breathability provides a simple, chemical-free way to help protect delicate fabrics during long-term storage.
+                                    Crafted from breathable natural muslin. Breathability provides a simple chemical-free way to help protect fabrics during storage.
                                 </p>
                             </div>
                         </div>
@@ -178,19 +178,19 @@ export default function Home() {
 
                     {/* Left: Text (Swapped for visual balance using order-2 md:order-1) */}
                     <div className="flex flex-col space-y-8 z-10 order-2 md:order-1">
-                        <h3 className="text-[#A98E5D] uppercase tracking-[0.3em] text-[10px] font-bold">
+                        <h3 className="text-[#A98E5D] uppercase tracking-[0.3em] text-[12px] font-bold">
                             THE SWEATER BAG
                         </h3>
                         <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-gray-900 leading-[1.2] font-serif">
                             Refined Storage for <span className="relative inline-block italic text-[#8C734B] animate-[pulse_4s_ease-in-out_infinite] drop-shadow-[0_0_8px_rgba(140,115,75,0.3)]">Delicate</span> Knitwear
                         </h2>
                         <p className="text-gray-600 leading-relaxed font-light text-lg lg:text-xl pb-6">
-                            Protective breathable storage designed specifically for cashmere and wool. Our sweater muslin bag preserves the softness and structure of your most delicate folded garments.
+                            Protective breathable storage designed for cashmere, wool, merino, and other knitwear, our sweater muslin bag protects the softness and structure of your folded garments.
                         </p>
                         <ul className="space-y-6 font-light text-gray-700 text-lg mb-8">
                             <li className="flex items-center">
                                 <span className="w-1.5 h-1.5 bg-[#A98E5D] rounded-full mr-4 shadow-sm shadow-[#A98E5D]/50 shrink-0"></span>
-                                Breathable cotton muslin
+                                Breathable muslin
                             </li>
                             <li className="flex items-center">
                                 <span className="w-1.5 h-1.5 bg-[#A98E5D] rounded-full mr-4 shadow-sm shadow-[#A98E5D]/50 shrink-0"></span>
@@ -233,7 +233,7 @@ export default function Home() {
                         Join the <span className="italic text-[#8C734B] drop-shadow-sm">Ecolin list</span>
                     </h2>
                     <p className="text-lg font-light text-gray-800 max-w-xl mx-auto">
-                        Sign up for exclusive insights on wardrobe preservation, sustainable living, and early access to archival releases.
+                        Sign up for exclusive insights on wardrobe preservation, sustainable garment protection, and early access to our garment releases.
                     </p>
                     <div className="max-w-md mx-auto pt-4">
                         <NewsletterSignup idContext="home" />

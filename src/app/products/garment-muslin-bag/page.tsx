@@ -54,37 +54,39 @@ export default function GarmentBagPage() {
                 {/* Product Info */}
                 <div className="flex flex-col space-y-10 lg:pl-8 pt-8 lg:pt-0">
                     <div>
-                        <span className="text-[#A98E5D] uppercase tracking-[0.3em] text-[10px] font-bold mb-4 block">Signature Edition</span>
+                        <span className="text-[#A98E5D] uppercase tracking-[0.3em] text-[12px] font-bold mb-4 block">Signature Edition</span>
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-gray-900 leading-[1.1] mb-6">
                             The Garment <span className="italic">Bag</span>
                         </h1>
                         <p className="text-xl font-light text-gray-600 leading-relaxed">
-                            Uncompromising Protection. For Suits, Coats, and Dresses.
+                            Uncompromising protection for suits, coats, and similar-sized garments.
                         </p>
                     </div>
 
                     <p className="text-gray-700 leading-relaxed font-light text-lg">
-                        Engineered for longevity. Our signature suit cover features a sheer organza window for effortless wardrobe navigation, and an exclusive padded channel designed specifically for cedar or lavender essential oils.
+                        Engineered for longevity, our signature garment cover features a sheer organza window for effortless wardrobe navigation and exclusive padded piping designed specifically to absorb cedar and/or lavender essential oils.
                     </p>
 
                     <ul className="space-y-4 font-light text-gray-700 text-base">
                         <li className="flex items-center">
                             <span className="w-1.5 h-1.5 bg-[#A98E5D] rounded-full mr-4 shrink-0"></span>
-                            100% Breathable Cotton Muslin
+                            100% breathable muslin
                         </li>
                         <li className="flex items-center">
                             <span className="w-1.5 h-1.5 bg-[#A98E5D] rounded-full mr-4 shrink-0"></span>
-                            Acid-free preservation environment
+                            Acid-free protective environment
                         </li>
                         <li className="flex items-center">
                             <span className="w-1.5 h-1.5 bg-[#A98E5D] rounded-full mr-4 shrink-0"></span>
-                            Natural moth deterrent channel
+                            Natural moth and bug deterrent piping
                         </li>
                         <li className="flex items-center">
                             <span className="w-1.5 h-1.5 bg-[#A98E5D] rounded-full mr-4 shrink-0"></span>
                             Sheer organza viewing window
                         </li>
                     </ul>
+
+                    <p className="text-[14px] text-[#8C734B] font-light tracking-wide">$18.99 USD</p>
 
                     {/* Shop Action */}
                     <div className="bg-gray-50 border border-gray-100 p-8 flex flex-col items-center text-center space-y-6">

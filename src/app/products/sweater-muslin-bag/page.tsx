@@ -54,23 +54,26 @@ export default function SweaterBagPage() {
                 {/* Product Info */}
                 <div className="flex flex-col space-y-10 lg:pl-8 pt-8 lg:pt-0">
                     <div>
-                        <span className="text-[#A98E5D] uppercase tracking-[0.3em] text-[10px] font-bold mb-4 block">Signature Edition</span>
+                        <span className="text-[#A98E5D] uppercase tracking-[0.3em] text-[12px] font-bold mb-4 block">Signature Edition</span>
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-gray-900 leading-[1.1] mb-6">
                             The Sweater <span className="italic">Bag</span>
                         </h1>
                         <p className="text-xl font-light text-gray-600 leading-relaxed">
-                            For Cashmere, Wool, Silk, and Chunky Knits.
+                            For sweaters, blankets, and folded knits.
                         </p>
                     </div>
 
+                    <p className="text-gray-700 leading-relaxed font-light text-lg space-y-4">
+                        Protective and breathable storage, our sweater muslin bag preserves and protects the softness and structure of your folded garments.
+                    </p>
                     <p className="text-gray-700 leading-relaxed font-light text-lg">
-                        Folded knitwear requires space to breathe and protection from natural pests. Specially dimensioned to house thick winter knits without compressing their loft, this bag features our signature natural moth deterrent pocket.
+                        Folded knitwear requires space to breathe and protection from natural pests. Specifically dimensioned to house thick winter knits without compression, this bag features our signature natural moth and bug deterrent material.
                     </p>
 
                     <ul className="space-y-4 font-light text-gray-700 text-base">
                         <li className="flex items-center">
                             <span className="w-1.5 h-1.5 bg-[#A98E5D] rounded-full mr-4 shrink-0"></span>
-                            Unbleached, acid-free Cotton Muslin
+                            Unbleached, acid-free muslin
                         </li>
                         <li className="flex items-center">
                             <span className="w-1.5 h-1.5 bg-[#A98E5D] rounded-full mr-4 shrink-0"></span>
@@ -78,13 +81,15 @@ export default function SweaterBagPage() {
                         </li>
                         <li className="flex items-center">
                             <span className="w-1.5 h-1.5 bg-[#A98E5D] rounded-full mr-4 shrink-0"></span>
-                            Dedicated cedar/lavender block pocket
+                            Dedicated cedar/lavender piping
                         </li>
                         <li className="flex items-center">
                             <span className="w-1.5 h-1.5 bg-[#A98E5D] rounded-full mr-4 shrink-0"></span>
-                            Secure Corozo (nut) button closure
+                            Sheer organza viewing window
                         </li>
                     </ul>
+
+                    <p className="text-[14px] text-[#8C734B] font-light tracking-wide">$14.99 USD</p>
 
                     {/* Shop Action */}
                     <div className="bg-gray-50 border border-gray-100 p-8 flex flex-col items-center text-center space-y-6">
