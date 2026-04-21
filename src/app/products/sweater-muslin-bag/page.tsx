@@ -38,7 +38,7 @@ export default function SweaterBagPage() {
             <div className="max-w-7xl mx-auto w-full px-6 md:px-12 py-12 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                 
                 {/* Product Image Gallery */}
-                <div className="sticky top-24 w-full h-[600px] md:h-[800px] bg-[#F9F8F6] flex items-center justify-center p-8 overflow-hidden rounded-sm border border-gray-100">
+                <div className="relative lg:sticky top-24 w-full h-[600px] md:h-[800px] bg-[#F9F8F6] flex items-center justify-center p-8 overflow-hidden rounded-sm border border-gray-100">
                     <div className="absolute inset-0 flex items-center justify-center text-gray-300 font-light text-xs uppercase tracking-widest z-0">
                         Image: sweater-muslin-bag-main.png
                     </div>
