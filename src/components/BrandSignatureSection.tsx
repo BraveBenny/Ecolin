@@ -117,7 +117,7 @@ export default function BrandSignatureSection() {
                                 </li>
                                 <li className={`flex items-center justify-center gap-2 anim-bullet-right-3 ${stateClass}`}>
                                     <span className="w-1 h-1 rounded-full bg-[#A98E5D] flex-shrink-0"></span>
-                                    Breathable folded protection
+                                    Breathable protection
                                 </li>
                             </ul>
                         </div>

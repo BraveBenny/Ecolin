@@ -38,7 +38,7 @@ export default function GarmentBagPage() {
             <div className="max-w-7xl mx-auto w-full px-6 md:px-12 py-12 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                 
                 {/* Product Image Gallery */}
-                <div className="relative lg:sticky top-24 w-full h-[600px] md:h-[800px] bg-[#F9F8F6] flex items-center justify-center p-8 overflow-hidden rounded-sm">
+                <div className="relative lg:sticky top-24 w-full h-[400px] md:h-[600px] lg:h-[800px] bg-[#F9F8F6] flex items-center justify-center p-8 overflow-hidden rounded-sm">
                     <div className="absolute inset-0 flex items-center justify-center text-gray-300 font-light text-xs uppercase tracking-widest z-0">
                         Image: product-suit-cover.png
                     </div>
@@ -86,7 +86,7 @@ export default function GarmentBagPage() {
                         </li>
                     </ul>
 
-                    <p className="text-[14px] text-[#8C734B] font-light tracking-wide">$18.99 USD</p>
+                    <p className="text-[18px] font-medium text-[#8C734B] tracking-wide transition-all duration-500 ease-out hover:-translate-y-[1px] hover:text-[#665335]">$18.99 USD</p>
 
                     {/* Shop Action */}
                     <div className="bg-gray-50 border border-gray-100 p-8 flex flex-col items-center text-center space-y-6">

@@ -4,6 +4,7 @@ import NewsletterSignup from '@/components/forms/NewsletterSignup';
 import ScrollBloomLogo from '@/components/effects/ScrollBloomLogo';
 import HeroImageCarousel from '@/components/effects/HeroImageCarousel';
 import BrandSignatureSection from '@/components/BrandSignatureSection';
+import AnimatedGradientText from '@/components/effects/AnimatedGradientText';
 
 export default function Home() {
     return (
@@ -43,7 +44,7 @@ export default function Home() {
                         <p className="text-gray-800/80 text-lg md:text-xl font-light mb-12 leading-relaxed max-w-lg">
                             The modern standard in garment care. Protective muslin storage designed to extend the life of your garments.
                         </p>
-                        <Link href="/products" className="inline-block bg-gray-900 text-white px-10 py-5 uppercase tracking-widest text-xs font-bold transition-all duration-700 ease-out hover:bg-white hover:text-gray-900 border border-transparent hover:border-gray-900 hover:-translate-y-1 shadow-xl shadow-gray-900/10">
+                        <Link href="/products" className="inline-block w-full text-center md:w-auto bg-gray-900 text-white px-10 py-5 uppercase tracking-widest text-xs font-bold transition-all duration-700 ease-out hover:bg-white hover:text-gray-900 border border-transparent hover:border-gray-900 hover:-translate-y-1 shadow-xl shadow-gray-900/10">
                             Discover the Collection
                         </Link>
                     </div>
@@ -64,7 +65,7 @@ export default function Home() {
 
                 <div className="relative z-10 max-w-4xl mx-auto space-y-12 px-4">
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-gray-900 tracking-tight leading-tight">
-                        The Shift from Plastic<br />to <span className="italic text-[#8C734B]">Protection</span>
+                        The Shift from Plastic<br />to <AnimatedGradientText>Natural Muslin Protection</AnimatedGradientText>
                     </h2>
                     <div className="w-12 h-px bg-[#A98E5D] mx-auto"></div>
                     <p className="text-xl md:text-2xl font-light text-gray-700 leading-relaxed max-w-2xl mx-auto">
@@ -78,7 +79,7 @@ export default function Home() {
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-24 items-center">
 
                     {/* Left: Image */}
-                    <div className="relative w-full h-[600px] md:h-[800px] flex items-center justify-center p-8 lg:p-12 group perspective-1000">
+                    <div className="relative w-full h-[400px] md:h-[600px] lg:h-[800px] flex items-center justify-center p-8 lg:p-12 group perspective-1000">
                         {/* Decorative refined frame */}
                         <div className="absolute inset-4 md:inset-8 border border-[#A98E5D]/20 bg-white/40 backdrop-blur-sm z-0 transition-transform duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-[1.02] group-hover:shadow-2xl group-hover:shadow-[rgba(169,142,93,0.15)] rounded-sm"></div>
                         <div className="absolute inset-0 flex items-center justify-center text-gray-300 font-light text-xs uppercase tracking-widest z-0 pointer-events-none">
@@ -165,7 +166,7 @@ export default function Home() {
                                 <span className="text-[#A98E5D] text-4xl font-serif italic block mb-6 transition-transform duration-700 group-hover:translate-x-2 group-hover:-translate-y-1 origin-left">03</span>
                                 <h4 className="text-2xl font-serif text-white mb-4">Moth Deterrent</h4>
                                 <p className="text-[#EAE4D9]/70 font-light leading-relaxed text-lg transition-colors duration-700 group-hover:text-[#EAE4D9]/90">
-                                    Crafted from breathable natural muslin. Breathability provides a simple chemical-free way to help protect fabrics during storage.
+                                    Crafted from muslin, a natural moth deterrent. Breathability provides a simple chemical-free way to help protect fabrics during storage.
                                 </p>
                             </div>
                         </div>
@@ -209,7 +210,7 @@ export default function Home() {
                     </div>
 
                     {/* Right: Image (Swapped for visual balance using order-1 md:order-2) */}
-                    <div className="relative w-full h-[600px] md:h-[800px] flex items-center justify-center p-8 lg:p-12 group perspective-1000 order-1 md:order-2">
+                    <div className="relative w-full h-[400px] md:h-[600px] lg:h-[800px] flex items-center justify-center p-8 lg:p-12 group perspective-1000 order-1 md:order-2">
                         {/* Decorative refined frame */}
                         <div className="absolute inset-4 md:inset-8 border border-[#A98E5D]/20 bg-white/40 backdrop-blur-sm z-0 transition-transform duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-[1.02] group-hover:shadow-2xl group-hover:shadow-[rgba(169,142,93,0.15)] rounded-sm"></div>
                         <div className="absolute inset-0 flex items-center justify-center text-gray-300 font-light text-xs uppercase tracking-widest z-0 pointer-events-none">

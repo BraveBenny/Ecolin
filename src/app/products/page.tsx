@@ -53,7 +53,7 @@ export default function ProductsPage() {
                                 className="object-contain z-10 p-8 md:p-12 transition-transform duration-[1.5s] ease-out group-hover:scale-105"
                             />
                         </div>
-                        <p className="text-[14px] text-[#8C734B] font-light mb-2 text-center">$18.99 USD</p>
+                        <p className="text-[18px] font-medium text-[#8C734B] tracking-wide transition-all duration-500 ease-out hover:-translate-y-[1px] hover:text-[#665335] mb-2 text-center">$18.99 USD</p>
                         <h2 className="text-2xl font-serif text-gray-900 mb-2 group-hover:text-[#A98E5D] transition-colors">Garment Bag</h2>
                         <p className="font-light text-gray-500 mb-8 text-center">For suits, coats, and similar-sized garments.</p>
                     </Link>
@@ -82,7 +82,7 @@ export default function ProductsPage() {
                                 className="object-contain z-10 p-8 md:p-12 transition-transform duration-[1.5s] ease-out group-hover:scale-105"
                             />
                         </div>
-                        <p className="text-[14px] text-[#8C734B] font-light mb-2 text-center">$14.99 USD</p>
+                        <p className="text-[18px] font-medium text-[#8C734B] tracking-wide transition-all duration-500 ease-out hover:-translate-y-[1px] hover:text-[#665335] mb-2 text-center">$14.99 USD</p>
                         <h2 className="text-2xl font-serif text-gray-900 mb-2 group-hover:text-[#A98E5D] transition-colors">Sweater Bag</h2>
                         <p className="font-light text-gray-500 mb-8 text-center">For sweaters, blankets, and folded knits.</p>
                     </Link>

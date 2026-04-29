@@ -7,22 +7,22 @@ export default function Footer() {
             <div className="max-w-5xl mx-auto flex flex-col items-center justify-center gap-10 md:gap-12">
                 
                 {/* Centered Logo */}
-                <div className="relative w-48 h-16 md:w-64 md:h-24 opacity-90 transition-opacity hover:opacity-100 duration-700">
-                    <Image 
-                        src="/images/logo-minimal.png" 
-                        alt="Ecolin Logo" 
-                        fill 
-                        className="object-contain filter brightness-0 invert" 
-                    />
-                </div>
+                <Link href="/" aria-label="Go to Ecolin homepage" className="block cursor-pointer">
+                    <div className="relative w-48 h-16 md:w-64 md:h-24 opacity-90 transition-opacity hover:opacity-100 duration-700">
+                        <Image 
+                            src="/images/logo-minimal.png" 
+                            alt="Ecolin Logo" 
+                            fill 
+                            className="object-contain filter brightness-0 invert" 
+                        />
+                    </div>
+                </Link>
 
                 {/* Navigation Links */}
                 <div className="flex flex-wrap justify-center gap-x-12 gap-y-6 text-[11px] md:text-[12px] font-medium tracking-[0.2em] uppercase text-[#A98E5D]">
                     <Link href="/" className="hover:text-white transition-colors duration-500">Home</Link>
                     <Link href="/products" className="hover:text-white transition-colors duration-500">Products</Link>
-                    <Link href="/sustainability" className="hover:text-white transition-colors duration-500">Sustainability</Link>
                     <Link href="/wholesale" className="hover:text-white transition-colors duration-500">Wholesale</Link>
-                    <Link href="/faq" className="hover:text-white transition-colors duration-500">FAQ</Link>
                     <Link href="/contact" className="hover:text-white transition-colors duration-500">Contact</Link>
                 </div>
             </div>
