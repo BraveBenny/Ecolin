@@ -87,6 +87,13 @@ export default function SweaterBagPage() {
                             <span className="w-1.5 h-1.5 bg-[#A98E5D] rounded-full mr-4 shrink-0"></span>
                             Sheer organza viewing window
                         </li>
+                        <li className="flex items-start">
+                            <span className="w-1.5 h-1.5 bg-[#A98E5D] rounded-full mr-4 shrink-0 mt-[0.45em]"></span>
+                            <span>
+                                15&#34; × 18&#34; × 3&#34;
+                                <span className="block text-[12px] text-gray-400 font-light tracking-wide mt-0.5">38 × 45.7 × 7.6 cm</span>
+                            </span>
+                        </li>
                     </ul>
 
                     <p className="text-[18px] font-medium text-[#8C734B] tracking-wide transition-all duration-500 ease-out hover:-translate-y-[1px] hover:text-[#665335]">$14.99 USD</p>

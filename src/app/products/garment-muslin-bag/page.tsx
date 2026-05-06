@@ -84,6 +84,13 @@ export default function GarmentBagPage() {
                             <span className="w-1.5 h-1.5 bg-[#A98E5D] rounded-full mr-4 shrink-0"></span>
                             Sheer organza viewing window
                         </li>
+                        <li className="flex items-start">
+                            <span className="w-1.5 h-1.5 bg-[#A98E5D] rounded-full mr-4 shrink-0 mt-[0.45em]"></span>
+                            <span>
+                                40&#34; × 24&#34; × 4&#34;
+                                <span className="block text-[12px] text-gray-400 font-light tracking-wide mt-0.5">101.6 × 61 × 10.2 cm</span>
+                            </span>
+                        </li>
                     </ul>
 
                     <p className="text-[18px] font-medium text-[#8C734B] tracking-wide transition-all duration-500 ease-out hover:-translate-y-[1px] hover:text-[#665335]">$18.99 USD</p>

@@ -69,6 +69,13 @@ export default function BrandSignatureSection() {
                                     <span className="w-1 h-1 rounded-full bg-[#A98E5D] flex-shrink-0"></span>
                                     Designed for suits and coats
                                 </li>
+                                <li className={`flex items-start justify-center gap-2 anim-bullet-left-3 ${stateClass}`}>
+                                    <span className="w-1 h-1 rounded-full bg-[#A98E5D] flex-shrink-0 mt-[0.45em]"></span>
+                                    <span>
+                                        40&#34; × 24&#34; × 4&#34;
+                                        <span className="block text-[10px] text-gray-400 font-light tracking-wide mt-0.5">101.6 × 61 × 10.2 cm</span>
+                                    </span>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -118,6 +125,13 @@ export default function BrandSignatureSection() {
                                 <li className={`flex items-center justify-center gap-2 anim-bullet-right-3 ${stateClass}`}>
                                     <span className="w-1 h-1 rounded-full bg-[#A98E5D] flex-shrink-0"></span>
                                     Breathable protection
+                                </li>
+                                <li className={`flex items-start justify-center gap-2 anim-bullet-right-3 ${stateClass}`}>
+                                    <span className="w-1 h-1 rounded-full bg-[#A98E5D] flex-shrink-0 mt-[0.45em]"></span>
+                                    <span>
+                                        15&#34; × 18&#34; × 3&#34;
+                                        <span className="block text-[10px] text-gray-400 font-light tracking-wide mt-0.5">38 × 45.7 × 7.6 cm</span>
+                                    </span>
                                 </li>
                             </ul>
                         </div>
