@@ -4,7 +4,7 @@ import Image from 'next/image';
 import SignatureReveal from '@/components/effects/SignatureReveal';
 import { useEffect, useRef, useState } from 'react';
 
-export function useSectionReveal(options = { threshold: 0.2 }) {
+export function useSectionReveal({ threshold = 0.2 } = {}) {
     const ref = useRef<HTMLElement | null>(null);
     const [isVisible, setIsVisible] = useState(false);
 
@@ -12,19 +12,22 @@ export function useSectionReveal(options = { threshold: 0.2 }) {
         const currentRef = ref.current;
         if (!currentRef) return;
 
-        const observer = new IntersectionObserver(([entry]) => {
-            if (entry.isIntersecting) {
-                setIsVisible(true);
-                observer.unobserve(currentRef);
-            }
-        }, options);
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                    observer.unobserve(currentRef);
+                }
+            },
+            { threshold }
+        );
 
         observer.observe(currentRef);
 
         return () => {
             if (currentRef) observer.unobserve(currentRef);
         };
-    }, [options.threshold]);
+    }, [threshold]);
 
     return { ref, isVisible };
 }

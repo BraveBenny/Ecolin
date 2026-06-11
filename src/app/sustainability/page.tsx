@@ -45,13 +45,13 @@ export default function SustainabilityPage() {
                                 Our muslin is unbleached and acid-free, manufactured without the harsh sizing and finishing chemicals standard in commercial fabrics. This protects both your garments and the waterways near our production facilities.
                             </p>
                         </div>
-                        <li className="flex items-start">
-                            <span className="text-[#A98E5D] mr-3 mt-1.5 shrink-0">•</span>
-                            <div>
-                                <strong className="text-gray-900 font-medium block">Durable Construction</strong>
+                        <div className="space-y-6">
+                            <div className="w-12 h-px bg-[#A98E5D]"></div>
+                            <h2 className="text-3xl font-serif text-gray-900">Durable Construction</h2>
+                            <p className="font-light text-gray-600 leading-relaxed text-lg">
                                 We designed our bags to sustain years of use. They aren&apos;t temporary covers; they are a permanent home for your garments.
-                            </div>
-                        </li>
+                            </p>
+                        </div>
                         <div className="space-y-6">
                             <div className="w-12 h-px bg-[#A98E5D]"></div>
                             <h2 className="text-3xl font-serif text-gray-900">Sustainable Packaging</h2>

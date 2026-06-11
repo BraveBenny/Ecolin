@@ -6,7 +6,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 const TO_EMAIL = "marketing@busybeegold.com";
 const FROM_EMAIL = "Ecolin Website <onboarding@resend.dev>"; // This should be a verified domain in production if possible, but onboarding/default verified domain works initially.
 
-export async function sendContactEmail(prevState: any, formData: FormData) {
+export async function sendContactEmail(prevState: unknown, formData: FormData) {
     try {
         const name = formData.get("name") as string;
         const email = formData.get("email") as string;
@@ -27,7 +27,7 @@ export async function sendContactEmail(prevState: any, formData: FormData) {
             <p><small>Submitted on: ${new Date().toUTCString()} (UTC)</small></p>
         `;
 
-        const { data, error } = await resend.emails.send({
+        const { error } = await resend.emails.send({
             from: FROM_EMAIL,
             to: TO_EMAIL,
             replyTo: email,
@@ -48,7 +48,7 @@ export async function sendContactEmail(prevState: any, formData: FormData) {
     }
 }
 
-export async function sendWholesaleEmail(prevState: any, formData: FormData) {
+export async function sendWholesaleEmail(prevState: unknown, formData: FormData) {
     try {
         const firstName = formData.get("firstName") as string;
         const lastName = formData.get("lastName") as string;
@@ -73,7 +73,7 @@ export async function sendWholesaleEmail(prevState: any, formData: FormData) {
             <p><small>Submitted on: ${new Date().toUTCString()} (UTC)</small></p>
         `;
 
-        const { data, error } = await resend.emails.send({
+        const { error } = await resend.emails.send({
             from: FROM_EMAIL,
             to: TO_EMAIL,
             replyTo: email,
